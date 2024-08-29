@@ -32,46 +32,10 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+  </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/callouts.css">
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -407,30 +371,23 @@
 
   <p class="date">2024-08-29</p>
 </section>
-<section id="section" class="title-slide slide level1 centeredslide center" data-background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy">
+<section id="section" class="title-slide slide level1 centeredslide center" data-background-video="https://web.cels.anl.gov/projects/alcf_vis_internal/HARVEY/sc23_arteries_sunspot_25fps_01.mp4" data-background-video-loop="true" loading="lazy">
 <h1></h1>
 <div style="background-color: rgba(22,22,22,0.75); border-radius: 10px; text-align:center; padding: 0px; padding-left: 1.5em; padding-right: 1.5em; max-width: min-content; min-width: max-content; margin-left: auto; margin-right: auto; padding-top: 0.2em; padding-bottom: 0.2em; line-height: 1.5em!important;">
-<p><span style="color:#939393; font-size:1.5em; font-weight: bold;">MLMC: Machine Learning Monte Carlo</span><br>
-<span style="color:#777777; font-size:1.2em; font-weight: bold;">for Lattice Gauge Theory</span><br>
+<p><span style="color:#939393; font-size:1.5em; font-weight: bold;">Workshop 1: Introduction to the Randles Lab</span><br>
+<span style="color:#777777; font-size:1.2em; font-weight: bold;">Getting started with our different tools</span><br>
 <span style="padding-bottom: 0.5rem;"><br>&nbsp;</span><br>
-<a href="https://samforeman.me"><i class="fa-solid fa-home" aria-label="home"></i></a> Sam Foreman<br>
-<span class="dim-text" style="font-size:0.8em;">Xiao-Yong Jin, James C. Osborn</span><br>
-<span style="font-size:0.8em;"><span style="border-bottom: 0.5px solid #00ccff;"><a href="https://github.com/saforem2/"><i class="fa-brands fa-github" aria-label="github"></i> <code>saforem2/</code></a></span><code>{</code><span style="border-bottom: 0.5px solid #00ccff;"><a href="https://github.com/saforem2/lattice23"><code>lattice23</code></a></span>, <span style="border-bottom: 0.5px solid #00ccff;"><a href="https://github.com/saforem2/l2hmc-qcd"><code>l2hmc-qcd</code></a></span><code>}</code></span></p>
+<a href="https://aymanzyy.github.io"><i class="fa-solid fa-home" aria-label="home"></i></a> Ayman Yousef</p>
 </div>
 <div class="footer">
-<p><span class="dim-text" style="&quot;text-align:left;'">2023-07-31 @ <a href="https://indico.fnal.gov/event/57249/contributions/271305/">Lattice 2023</a></span></p>
+<p><span class="dim-text" style="&quot;text-align:left;'">2024-09-04 @ <a href="https://randleslab.pratt.duke.edu">Randles Lab Workshop Series</a></span></p>
 </div>
 </section>
 
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
 <ol type="1">
-<li><a href="#/markov-chain-monte-carlo-mcmc-centeredslide">Background:</a>
-<ul>
-<li><a href="#/leapfrog-integrator-hmc-centeredslide">Leapfrog Integrator</a></li>
-<li><a href="#/sec-issues-with-hmc">Issues with HMC</a></li>
-<li><a href="#/sec-can-we-do-better">Can we do better?</a></li>
-</ul></li>
+<li><a href="#/markov-chain-monte-carlo-mcmc-centeredslide">Background:</a></li>
 <li><a href="#/sec-l2hmc">Documentation</a>
 <ul>
 <li><a href="#/sec-su3">Wiki</a></li>
@@ -467,7 +424,7 @@
 <li><p><span style="color:#ff8281;">Ex</span>: Monday pages are checked at random and during project meetings</p></li>
 </ul>
 </div><div class="column" style="width:49%;">
-<p><img data-src="https://raw.githubusercontent.com/saforem2/deep-fridays/main/assets/normal_distribution.dark.svg"></p>
+<p><img data-src="https://images.ctfassets.net/xz1dnu24egyd/3FbNmZRES38q2Sk2EcoT7a/a290dc207a67cf779fc7c2456b177e9f/press-kit-icon.svg" style="width:25.0%"> <img data-src="https://images.ctfassets.net/nrgyaltdicpt/lrfSTdfvhXxtaEcldEGV0/6932002ad80fc61ef60c01c7e09c8e79/overleaf-logo-white.svg" style="width:50.0%"> <img data-src="https://seeklogo.com/images/C/confluence-logo-D9B07137C2-seeklogo.com.png" style="width:30.0%"> <img data-src="https://monday.com/p/wp-content/uploads/2024/03/Logo-1-NO-1.png" style="width:50.0%"></p>
 </div></div>
 <p>You are not expected to be experts by the end of this, but familiarty with each of these is <span style="color:#9c90fa;">expected</span>.</p>
 <div class="footer">
@@ -475,144 +432,14 @@
 </div>
 </section>
 
-<section id="markov-chain-monte-carlo-mcmc" class="title-slide slide level1 centeredslide center">
-<h1>Markov Chain Monte Carlo (MCMC)</h1>
+<section id="why-do-we-care" class="title-slide slide level1 centeredslide center">
+<h1>Why Do We Care</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div title="Goal" style="text-align:left;!important">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Goal</strong></p>
-</div>
-<div class="callout-content">
-<p>Generate <strong>independent</strong> samples <span class="math inline">\{x_{i}\}</span>, such that<sup>1</sup> <span class="math display">\{x_{i}\} \sim p(x) \propto e^{-S(x)}</span> where <span class="math inline">S(x)</span> is the <em>action</em> (or potential energy)</p>
-</div>
-</div>
-</div>
-</div>
 <ul>
-<li>Want to calculate observables <span class="math inline">\mathcal{O}</span>:<br>
-<span class="math inline">\left\langle \mathcal{O}\right\rangle \propto \int \left[\mathcal{D}x\right]\hspace{4pt} {\mathcal{O}(x)\, p(x)}</span></li>
+<li>Reproducibility is one of the most important aspets of research</li>
+<li>Key tenant of the Randles Lab, you will be involved in multiple projects</li>
 </ul>
-</div><div class="column" style="width:49%;">
-<p><img data-src="https://raw.githubusercontent.com/saforem2/deep-fridays/main/assets/normal_distribution.dark.svg"></p>
-</div></div>
-<p>Instead, nearby configs are <span class="red-text">correlated</span>, and we incur a factor of <span class="math inline">\textcolor{#FF5252}{\tau^{\mathcal{O}}_{\mathrm{int}}}</span>: <span class="math display">\sigma_{\mathcal{O}}^{2} =
-  \frac{\textcolor{#FF5252}{\tau^{\mathcal{O}}_{\mathrm{int}}}}{N}\mathrm{Var}{\left[\mathcal{O}
-  (x) \right]}</span></p>
-<div class="footer">
-<p><a href="https://github.com/saforem2/lattice23"><i class="fa-brands fa-github" aria-label="github"></i> <code>saforem2/lattice23</code></a></p>
-</div>
-<aside><ol class="aside-footnotes"></ol></aside></section>
-
-<section>
-<section id="hamiltonian-monte-carlo-hmc" class="title-slide slide level1 centeredslide center">
-<h1>Hamiltonian Monte Carlo (HMC)</h1>
-<ul>
-<li><p>Want to (sequentially) construct a chain of states: <span class="math display">x_{0} \rightarrow x_{1} \rightarrow x_{i} \rightarrow \cdots \rightarrow x_{N}\hspace{10pt}</span></p>
-<p>such that, as <span class="math inline">N \rightarrow \infty</span>: <span class="math display">\left\{x_{i}, x_{i+1}, x_{i+2}, \cdots, x_{N} \right\} \xrightarrow[]{N\rightarrow\infty} p(x)
-\propto e^{-S(x)}</span></p></li>
-</ul>
-<div title="Trick" style="display:inline!important;">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Trick</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>Introduce <span class="green-text">fictitious</span> momentum <span class="math inline">v \sim \mathcal{N}(0, \mathbb{1})</span>
-<ul>
-<li>Normally distributed <strong>independent</strong> of <span class="math inline">x</span>, i.e. <span class="math display">\begin{align*}
-p(x, v) &amp;\textcolor{#02b875}{=} p(x)\,p(v) \propto e^{-S{(x)}} e^{-\frac{1}{2} v^{T}v}
-= e^{-\left[S(x) + \frac{1}{2} v^{T}{v}\right]}
-\textcolor{#02b875}{=} e^{-H(x, v)}
-\end{align*}</span></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="hamiltonian-monte-carlo-hmc-1" class="slide level2 centeredslide center">
-<h2>Hamiltonian Monte Carlo (HMC)</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<ul>
-<li><p><span class="green-text"><strong>Idea</strong></span>: Evolve the <span class="math inline">(\dot{x}, \dot{v})</span> system to get new states <span class="math inline">\{x_{i}\}</span>❗</p></li>
-<li><p>Write the <strong>joint distribution</strong> <span class="math inline">p(x, v)</span>: <span class="math display">
-p(x, v) \propto e^{-S[x]} e^{-\frac{1}{2}v^{T} v} = e^{-H(x, v)}
-</span></p></li>
-</ul>
-</div><div class="column" style="width:45%;">
-<div title="Hamiltonian Dynamics">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Hamiltonian Dynamics</strong></p>
-</div>
-<div class="callout-content">
-<p><span class="math inline">H = S[x] + \frac{1}{2} v^{T} v \Longrightarrow</span> <span class="math display">\dot{x} = +\partial_{v} H,
-\,\,\dot{v} = -\partial_{x} H</span></p>
-</div>
-</div>
-</div>
-</div>
-</div></div>
-
-<img data-src="https://raw.githubusercontent.com/saforem2/deep-fridays/main/assets/hmc1.svg" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;1: Overview of HMC algorithm
-</p></section>
-<section id="sec-leapfrog" class="slide level2 centeredslide center">
-<h2>Leapfrog Integrator (HMC)</h2>
-<div class="columns" style="text-align:center; font-size: 0.9em;" height="100%">
-<div class="column" style="width:48%;">
-<div title="Hamiltonian Dynamics">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Hamiltonian Dynamics</strong></p>
-</div>
-<div class="callout-content">
-<p><span class="math inline">\left(\dot{x}, \dot{v}\right) = \left(\partial_{v} H, -\partial_{x} H\right)</span></p>
-</div>
-</div>
-</div>
-</div>
-<div title="Leapfrog Step">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Leapfrog Step</strong></p>
-</div>
-<div class="callout-content">
-<p><code>input</code> <span class="math inline">\,\left(x, v\right) \rightarrow \left(x', v'\right)\,</span> <code>output</code></p>
-<p><span class="math display">\begin{align*}
-\tilde{v} &amp;:= \textcolor{#F06292}{\Gamma}(x, v)\hspace{2.2pt} = v - \frac{\varepsilon}{2} \partial_{x} S(x) \\
-x' &amp;:= \textcolor{#FD971F}{\Lambda}(x, \tilde{v}) \, =  x + \varepsilon \, \tilde{v} \\
-v' &amp;:= \textcolor{#F06292}{\Gamma}(x', \tilde{v}) = \tilde{v} - \frac{\varepsilon}{2} \partial_{x} S(x')
-\end{align*}</span></p>
-</div>
-</div>
-</div>
-</div>
 <div title="Warning!">
 <div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
@@ -624,261 +451,75 @@ v' &amp;:= \textcolor{#F06292}{\Gamma}(x', \tilde{v}) = \tilde{v} - \frac{\varep
 </div>
 <div class="callout-content">
 <ul>
-<li>Resample <span class="math inline">v_{0} \sim \mathcal{N}(0, \mathbb{1})</span><br>
-at the <span class="yellow-text">beginning</span> of each trajectory</li>
+<li>Your focus will be diverted on a day-to-day basis. Good to make notes for both yourself and fellow lab members</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div style="font-size:0.8em; margin-left:13%;">
-<p><span class="dim-text"><strong>Note</strong>: <span class="math inline">\partial_{x} S(x)</span> is the <em>force</em></span></p>
-</div>
-</div><div class="column" style="text-align:left; margin-left:2%;">
-<p><img data-src="./assets/hmc1/hmc-update-light.svg" style="width:60.0%"></p>
-</div></div>
-</section>
-<section id="hmc-update" class="slide level2 center">
-<h2>HMC Update</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
 <ul>
-<li><p>We build a trajectory of <span class="math inline">N_{\mathrm{LF}}</span> <strong>leapfrog steps</strong><sup>1</sup> <span class="math display">\begin{equation*}
-(x_{0}, v_{0})%
-\rightarrow (x_{1}, v_{1})\rightarrow \cdots%
-\rightarrow (x', v')
-\end{equation*}</span></p></li>
-<li><p>And propose <span class="math inline">x'</span> as the next state in our chain</p></li>
-</ul>
-<p><span class="math display">\begin{align*}
-  \textcolor{#F06292}{\Gamma}: (x, v) \textcolor{#F06292}{\rightarrow} v' &amp;:= v - \frac{\varepsilon}{2} \partial_{x} S(x) \\
-  \textcolor{#FD971F}{\Lambda}: (x, v) \textcolor{#FD971F}{\rightarrow} x' &amp;:= x + \varepsilon v
-\end{align*}</span></p>
+<li>Collaboration is a key aspect of our research. Courteous to keep good notes so others can easily replicate your work
 <ul>
-<li>We then accept / reject <span class="math inline">x'</span> using Metropolis-Hastings criteria,<br>
-<span class="math inline">A(x'|x) = \min\left\{1, \frac{p(x')}{p(x)}\left|\frac{\partial x'}{\partial x}\right|\right\}</span></li>
-</ul>
-</div><div class="column" style="width:30%;">
-<p><img data-src="./assets/hmc1/hmc-update-light.svg"></p>
-</div></div>
-
-<aside><div>
-<hr>
-<ol start="2">
-<li id="fn2"><p>We <strong>always</strong> start by resampling the momentum, <span class="math inline">v_{0} \sim
-\mathcal{N}(0, \mathbb{1})</span><a href="#/fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</div><ol class="aside-footnotes"></ol></aside></section>
-<section id="hmc-demo" class="slide level2 centeredslide center">
-<h2>HMC Demo</h2>
-<div id="fig-hmc-demo" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-hmc-demo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<iframe data-src="https://chi-feng.github.io/mcmc-demo/app.html" width="90%" height="500" title="l2hmc-qcd">
-</iframe>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hmc-demo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: HMC Demo
-</figcaption>
-</figure>
-</div>
-</section></section>
-<section id="sec-issues" class="title-slide slide level1 center" style="font-size:0.9em;">
-<h1>Issues with HMC</h1>
-<ul>
-<li>What do we want in a good sampler?
-<ul>
-<li><strong>Fast mixing</strong> (small autocorrelations)</li>
-<li><strong>Fast burn-in</strong> (quick convergence)</li>
-</ul></li>
-<li>Problems with HMC:
-<ul>
-<li>Energy levels selected randomly <span class="math inline">\rightarrow</span> <strong>slow mixing</strong></li>
-<li>Cannot easily traverse low-density zones <span class="math inline">\rightarrow</span> <strong>slow convergence</strong></li>
+<li><span style="color:#ff8281;">Ex</span>: Getting hit by a bus</li>
 </ul></li>
 </ul>
-<div id="fig-hmc-issues" class="quarto-layout-panel">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-hmc-issues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://raw.githubusercontent.com/saforem2/l2hmc-dwq25/main/docs/assets/hmc_traj_eps025.svg"></p>
-<figcaption>HMC Samples with <span class="math inline">\varepsilon=0.25</span></figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://raw.githubusercontent.com/saforem2/l2hmc-dwq25/main/docs/assets/hmc_traj_eps05.svg"></p>
-<figcaption>HMC Samples with <span class="math inline">\varepsilon=0.5</span></figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hmc-issues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: HMC Samples generated with varying step sizes <span class="math inline">\varepsilon</span>
-</figcaption>
-</figure>
+</div><div class="column" style="width:49%;">
+<ul>
+<li>Learning these tools are important in sustaining a collaborative lab environment.
+<ul>
+<li>If we’re all comfortable with the same tools, it becomes easier pass of tasks, share work, etc.</li>
+</ul></li>
+</ul>
+</div></div>
+<div class="footer">
+<p><a href="https://github.com/saforem2/lattice23"><i class="fa-brands fa-github" aria-label="github"></i> <code>saforem2/lattice23</code></a></p>
 </div>
 </section>
 
-<section id="topological-freezing" class="title-slide slide level1 centeredslide center">
-<h1>Topological Freezing</h1>
-<div class="columns">
-<div class="column" style="width:45%;">
-<div style="text-align:left; font-size: 0.9em;">
-<p><strong>Topological Charge</strong>: <span class="math display">Q = \frac{1}{2\pi}\sum_{P}\left\lfloor x_{P}\right\rfloor  \in \mathbb{Z}</span></p>
-</div>
-<p><span class="dim-text" style="font-size:0.8em;"><strong>note:</strong> <span class="math inline">\left\lfloor x_{P} \right\rfloor = x_{P} - 2\pi
-\left\lfloor\frac{x_{P} + \pi}{2\pi}\right\rfloor</span></span></p>
-<div title="Critical Slowing Down" style="text-align:left;">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Critical Slowing Down</strong></p>
-</div>
-<div class="callout-content">
+<section id="documentation" class="title-slide slide level1 centeredslide center">
+<h1>Documentation</h1>
 <ul>
-<li><span class="math inline">Q</span> gets stuck!
-<ul>
-<li>as <span class="math inline">\beta\longrightarrow \infty</span>:
-<ul>
-<li><span class="math inline">Q \longrightarrow \text{const.}</span></li>
-<li><span class="math inline">\delta Q = \left(Q^{\ast} - Q\right) \rightarrow 0 \textcolor{#FF5252}{\Longrightarrow}</span></li>
-</ul></li>
-<li># configs required to estimate errors<br>
-<strong>grows exponentially</strong>: <span class="red-text"><span class="math inline">\tau_{\mathrm{int}}^{Q} \longrightarrow \infty</span></span></li>
-</ul></li>
+<li><p>Wiki (Confluence)</p></li>
+<li><p>Box</p></li>
+<li><p>Outlook</p></li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:45%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://raw.githubusercontent.com/saforem2/l2hmc-dwq25/main/docs/assets/critical_slowing_down.svg" style="width:80.0%"></p>
-<figcaption>Note <span class="math inline">\delta Q \rightarrow 0</span> at increasing <span class="math inline">\beta</span></figcaption>
-</figure>
-</div>
-</div></div>
 </section>
 
-<section id="sec-can-we-do-better" class="title-slide slide level1 center">
-<h1>Can we do better?</h1>
+<section id="wiki-confluence" class="title-slide slide level1 centeredslide center">
+<h1>Wiki (Confluence)</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>Introduce two (<strong>invertible NNs</strong>) <code>vNet</code> and <code>xNet</code><sup>1</sup>:
+<li><p>Website that houses most of our documentation</p></li>
+<li><p>Project updates are written here, with everyone in the lab having access to every page</p></li>
+<li><p>Structure:</p>
 <ul>
-<li><span style="font-size:0.9em;"><code>vNet:</code> <span class="math inline">(x, F) \longrightarrow \left(s_{v},\, t_{v},\, q_{v}\right)</span></span><br>
-</li>
-<li><span style="font-size:0.9em;"><code>xNet:</code> <span class="math inline">(x, v) \longrightarrow \left(s_{x},\, t_{x},\, q_{x}\right)</span></span></li>
+<li>Each project has a “landing page” and a “notebook”</li>
+<li>Notebooks contain information regarding the ongoing project it’s for</li>
 </ul></li>
 </ul>
-<p>&nbsp;</p>
-<ul>
-<li>Use these <span class="math inline">(s, t, q)</span> in the <em>generalized</em> MD update:
-<ul>
-<li><span><span class="pink-text"><span class="math inline">\Gamma_{\theta}^{\pm}</span></span> <span class="math inline">: ({x}, \textcolor{#07B875}{v}) \xrightarrow[]{\textcolor{#F06292}{s_{v}, t_{v}, q_{v}}} (x, \textcolor{#07B875}{v'})</span></span></li>
-<li><span><span class="orange-text"><span class="math inline">\Lambda_{\theta}^{\pm}</span></span> <span class="math inline">: (\textcolor{#AE81FF}{x}, v) \xrightarrow[]{\textcolor{#FD971F}{s_{x}, t_{x}, q_{x}}} (\textcolor{#AE81FF}{x'}, v)</span></span></li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:48%;">
-<div id="fig-mdupdate" class="quarto-float quarto-figure quarto-figure-center" style="width:85%; text-align:center;">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-mdupdate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="./assets/leapfrog-layer-2D-U1-vertical.light.svg" style="width:85%; text-align:center;">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mdupdate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Generalized MD update where <span class="orange-text"><span class="math inline">\Lambda_{\theta}^{\pm}</span></span>, <span class="pink-text"><span class="math inline">\Gamma_{\theta}^{\pm}</span></span> are <strong>invertible NNs</strong>
-</figcaption>
-</figure>
-</div>
+</div><div class="column" style="width:49%;">
+<p><img data-src="https://i.gyazo.com/66b9f922cf03aa041292ca4012058ac0.pngg" style="width:90.0%"></p>
+<p><img data-src="https://i.gyazo.com/48c5538a154172f98d505c8877f67df5.png" style="width:90.0%"></p>
 </div></div>
-<aside><ol class="aside-footnotes"></ol></aside></section>
+</section>
 
-<section>
-<section id="sec-l2hmc" class="title-slide slide level1 centeredslide center">
-<h1>L2HMC: Generalizing the MD Update</h1>
+<section id="wiki-sample-entry" class="title-slide slide level1 centeredslide center">
+<h1>Wiki: Sample Entry</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div title="L2HMC Update" style="font-size: 0.9em;">
-<div class="callout callout-none no-icon callout-titled callout-style-simple">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>L2HMC Update</strong></p>
-</div>
-<div class="callout-content">
 <ul>
-<li><p>Introduce <span class="math inline">d \sim \mathcal{U}(\pm)</span> to determine the direction of our update</p>
-<ol type="1">
-<li><p><span><span class="math inline">\textcolor{#07B875}{v'} =</span> <span class="pink-text"><span class="math inline">\Gamma^{\pm}</span></span><span class="math inline">({x}, \textcolor{#07B875}{v})</span></span> <span class="dim-text" style="font-size:0.9em;"><span class="math inline">\hspace{46pt}</span> update <span class="math inline">v</span></span></p></li>
-<li><p><span><span class="math inline">\textcolor{#AE81FF}{x'} =</span> <span class="blue-text"><span class="math inline">x_{B}</span></span><span class="math inline">\,+\,</span><span class="orange-text"><span class="math inline">\Lambda^{\pm}</span></span><span class="math inline">(</span><span class="red-text"><span class="math inline">x_{A}</span></span><span class="math inline">, {v'})</span></span> <span class="dim-text" style="font-size:0.9em;"><span class="math inline">\hspace{10pt}</span> update first <strong>half</strong>: <span class="math inline">x_{A}</span></span></p></li>
-<li><p><span><span class="math inline">\textcolor{#AE81FF}{x''} =</span> <span class="red-text"><span class="math inline">x'_{A}</span></span><span class="math inline">\,+\,</span><span class="orange-text"><span class="math inline">\Lambda^{\pm}</span></span><span class="math inline">(</span><span class="blue-text"><span class="math inline">x'_{B}</span></span><span class="math inline">, {v'})</span></span> <span class="dim-text" style="font-size:0.9em;"><span class="math inline">\hspace{8pt}</span> update other half: <span class="math inline">x_{B}</span></span></p></li>
-<li><p><span><span class="math inline">\textcolor{#07B875}{v''} =</span> <span class="pink-text"><span class="math inline">\Gamma^{\pm}</span></span><span class="math inline">({x''}, \textcolor{#07B875}{v'})</span></span> <span class="dim-text" style="font-size:0.9em;"><span class="math inline">\hspace{36pt}</span> update <span class="math inline">v</span></span></p></li>
-</ol></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div title="🎲 Re-Sampling" style="text-align:left; font-size: 0.7em; line-height:1em;">
-<div class="callout callout-none no-icon callout-titled callout-style-simple">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>🎲 Re-Sampling</strong></p>
-</div>
-<div class="callout-content">
+<li>Date:
 <ul>
-<li>Resample both <span class="math inline">v\sim \mathcal{N}(0, 1)</span>, and <span class="math inline">d \sim \mathcal{U}(\pm)</span> at the beginning of each trajectory
-<ul>
-<li>To ensure ergodicity + reversibility, we split the <span class="purple-text"><span class="math inline">x</span></span> update into sequential (complementary) updates</li>
+<li>Can be days when work was performed or when journal entry is recorded</li>
 </ul></li>
-<li>Introduce directional variable <span class="math inline">d \sim \mathcal{U}(\pm)</span>, resampled at the beginning of each trajectory:
+<li>Summary:
 <ul>
-<li>Note that <span class="math inline">\left(\Gamma^{+}\right)^{-1} = \Gamma^{-}</span>, i.e. <span class="math display">\Gamma^{+}\left[\Gamma^{-}(x, v)\right] = \Gamma^{-}\left[\Gamma^{+}(x,
-v)\right] = (x, v)</span></li>
+<li>Include context for what work you’re performing.</li>
+<li>Can be conversational, some of the best notebooks work through the thinking process that led to a specific run, solution, etc.</li>
 </ul></li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div id="fig-mdupdate" class="quarto-float quarto-figure quarto-figure-center" style="width:85%; text-align:center;">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-mdupdate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="./assets/leapfrog-layer-2D-U1-vertical.light.svg" style="width:85%; text-align:center;">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mdupdate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Generalized MD update with <span class="orange-text"><span class="math inline">\Lambda_{\theta}^{\pm}</span></span>, <span class="pink-text"><span class="math inline">\Gamma_{\theta}^{\pm}</span></span> <strong>invertible NNs</strong>
-</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="l2hmc-leapfrog-layer" class="slide level2 centeredslide center">
-<h2>L2HMC: Leapfrog Layer</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<p><img data-src="https://raw.githubusercontent.com/saforem2/l2hmc-dwq25/main/docs/assets/drawio/update_steps.svg" class="absolute" style="top: 30px; width: 40%; "></p>
-</div><div class="column" style="width:65%;">
-<p><img data-src="https://raw.githubusercontent.com/saforem2/l2hmc-dwq25/main/docs/assets/drawio/leapfrog_layer_dark2.svg" style="width:100.0%"></p>
-</div></div>
-<p><img data-src="https://raw.githubusercontent.com/saforem2/l2hmc-dwq25/main/docs/assets/drawio/network_functions.svg" class="absolute" style="top: 440px; width: 100%; "></p>
-</section>
-<section id="l2hmc-update" class="slide level2 center" style="font-size: 0.775em;">
-<h2>L2HMC Update</h2>
-<div class="columns">
-<div class="column" style="font-size:0.99em;">
+</div><div class="column" style="font-size:0.59em;">
 <div title="Algorithm">
 <div class="callout callout-none no-icon callout-titled callout-style-simple">
 <div class="callout-body">
@@ -887,824 +528,472 @@ Figure&nbsp;5: Generalized MD update with <span class="orange-text"><span class=
 </div>
 <div class="callout-content">
 <ol type="1">
-<li><p><code>input</code>: <span class="purple-text"><span class="math inline">x</span></span></p>
+<li><p><code>Date</code>:</p></li>
+<li><p><code>Goal</code>:</p>
 <ul>
-<li>Resample: <span class="math inline">\textcolor{#07B875}{v} \sim \mathcal{N}(0, \mathbb{1})</span>; <span class="math inline">\,\,{d\sim\mathcal{U}(\pm)}</span></li>
-<li>Construct initial state: <span class="math inline">\textcolor{#939393}{\xi} =(\textcolor{#AE81FF}{x}, \textcolor{#07B875}{v}, {\pm})</span></li>
+<li>Intended purpose of run, should match surrounding Wiki entry</li>
 </ul></li>
-<li><p><code>forward</code>: Generate <span style="color:#f8f8f8">proposal <span class="math inline">\xi'</span></span> by passing <span style="color:#939393">initial <span class="math inline">\xi</span></span> through <span class="math inline">N_{\mathrm{LF}}</span> leapfrog layers<br>
-<span class="math display">\textcolor{#939393} \xi \hspace{1pt}\xrightarrow[]{\tiny{\mathrm{LF} \text{ layer}}}\xi_{1} \longrightarrow\cdots \longrightarrow \xi_{N_{\mathrm{LF}}} = \textcolor{#f8f8f8}{\xi'} := (\textcolor{#AE81FF}{x''}, \textcolor{#07B875}{v''})</span></p>
+<li><p><code>Input File</code>:</p>
 <ul>
-<li>Accept / Reject: <span class="math display">\begin{equation*}
-A({\textcolor{#f8f8f8}{\xi'}}|{\textcolor{#939393}{\xi}})=
-\mathrm{min}\left\{1,
-\frac{\pi(\textcolor{#f8f8f8}{\xi'})}{\pi(\textcolor{#939393}{\xi})} \left| \mathcal{J}\left(\textcolor{#f8f8f8}{\xi'},\textcolor{#939393}{\xi}\right)\right| \right\}
-\end{equation*}</span></li>
+<li>Ideally, link the actual file</li>
+<li>If you’re lazy, data path</li>
 </ul></li>
-<li><p><code>backward</code> (if training):</p>
+<li><p><code>Path to data output</code>:</p></li>
+<li><p><code>Code Version - git checkout</code>:</p>
 <ul>
-<li>Evaluate the <strong>loss function</strong><sup>1</sup> <span class="math inline">\mathcal{L}\gets \mathcal{L}_{\theta}(\textcolor{#f8f8f8}{\xi'}, \textcolor{#939393}{\xi})</span> and backprop</li>
+<li>Link to branch</li>
+<li>Write commit hash</li>
 </ul></li>
-<li><p><code>return</code>: <span class="math inline">\textcolor{#AE81FF}{x}_{i+1}</span><br>
-Evaluate MH criteria <span class="math inline">(1)</span> and return accepted config, <span class="math display">\textcolor{#AE81FF}{{x}_{i+1}}\gets
-  \begin{cases}
-  \textcolor{#f8f8f8}{\textcolor{#AE81FF}{x''}} \small{\text{ w/ prob }} A(\textcolor{#f8f8f8}{\xi''}|\textcolor{#939393}{\xi}) \hspace{26pt} ✅ \\
-  \textcolor{#939393}{\textcolor{#AE81FF}{x}} \hspace{5pt}\small{\text{ w/ prob }} 1 - A(\textcolor{#f8f8f8}{\xi''}|{\textcolor{#939393}{\xi}}) \hspace{10pt} 🚫
-  \end{cases}</span></p></li>
+<li><p><code>Job Submission Parameters</code>:</p>
+<ul>
+<li>Number of processors</li>
+<li>Relevant job parameters
+<ul>
+<li>Partition</li>
+<li>Node numbers</li>
+<li>Flags</li>
+</ul></li>
+</ul></li>
+<li><p><code>Outcome/Post Processing</code>:</p>
+<ul>
+<li>Link scripts</li>
+<li>Explain your workflow</li>
+</ul></li>
 </ol>
 </div>
 </div>
 </div>
-</div>
-</div><div class="column" style="width:50%;">
-<div id="fig-mdupdate" class="quarto-float quarto-figure quarto-figure-center" style="width:75%; text-align:center;">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-mdupdate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="./assets/leapfrog-layer-2D-U1-vertical.light.svg" style="width:75%; text-align:center;">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mdupdate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: <strong>Leapfrog Layer</strong> used in generalized MD update
-</figcaption>
-</figure>
 </div>
 </div></div>
+</section>
 
-<aside><div>
-<hr>
-<ol start="4">
-<li id="fn4"><p>For simple <span class="math inline">\mathbf{x} \in \mathbb{R}^{2}</span> example, <span class="math inline">\mathcal{L}_{\theta} =
-A(\xi^{\ast}|\xi)\cdot \left(\mathbf{x}^{\ast} - \mathbf{x}\right)^{2}</span><a href="#/fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</div><ol class="aside-footnotes"></ol></aside></section></section>
-<section>
-<section id="sec-su3" class="title-slide slide level1 centeredslide center" style="font-size: 0.9em;">
-<h1>4D <span class="math inline">SU(3)</span> Model</h1>
+<section id="wiki-example-entry" class="title-slide slide level1 centeredslide center">
+<h1>Wiki: Example Entry</h1>
+<p><img data-src="https://i.gyazo.com/4315a92dce655ed54b035eedf5dc1909.png" style="height:150.0%"></p>
+</section>
+
+<section id="box" class="title-slide slide level1 centeredslide center">
+<h1>Box</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div title="Link Variables" style="text-align:left;">
-<div class="callout callout-note callout-titled callout-style-default">
+<ul>
+<li>Website that houses the rest of our documentation</li>
+<li>Files to be shared with the lab, Professor Randles are housed here
+<ul>
+<li>Group Presentations</li>
+<li>Individual meeting files</li>
+<li>Milestone documents</li>
+</ul></li>
+<li>Unlimited lab storage but Duke also gives individuals their own allocation of storage</li>
+</ul>
+<div title="Warning!">
+<div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Link Variables</strong></p>
+<p><strong>Warning!</strong></p>
 </div>
 <div class="callout-content">
 <ul>
-<li><p>Write link variables <span class="math inline">U_{\mu}(x) \in SU(3)</span>:</p>
-<p><span class="math display"> \begin{align*}
-U_{\mu}(x) &amp;= \mathrm{exp}\left[{i\, \textcolor{#AE81FF}{\omega^{k}_{\mu}(x)} \lambda^{k}}\right]\\
-&amp;= e^{i \textcolor{#AE81FF}{Q}},\quad \text{with} \quad \textcolor{#AE81FF}{Q} \in \mathfrak{su}(3)
-\end{align*}</span></p>
-<p><span style="font-size:0.9em;">where <span class="purple-text"><span class="math inline">\omega^{k}_{\mu}(x)</span></span> <span class="math inline">\in \mathbb{R}</span>, and <span class="math inline">\lambda^{k}</span> are the generators of <span class="math inline">SU(3)</span></span></p></li>
+<li>DO NOT UPLOAD UNNECESSARY FILES</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div title="Conjugate Momenta" style="text-align:left;">
+</div><div class="column" style="width:49%;">
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/5/57/Box%2C_Inc._logo.svg" style="width:75.0%"> <img data-src="https://i.gyazo.com/22547996db9d716c894e64cc8dcbe815.png" style="height:150.0%"></p>
+</div></div>
+</section>
+
+<section id="outlook" class="title-slide slide level1 centeredslide center">
+<h1>Outlook</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>We use Outlook calendar to organize our lab schedule. This includes:
+<ul>
+<li>Meetings</li>
+<li>Lab Activities</li>
+<li>Milestone Events</li>
+<li>Time Off</li>
+</ul></li>
+</ul>
+<div title="Warning" style="text-align:left;">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Professor Randles lives by her calendar. If it’s not on her calendar, it’s not happening</strong>:</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:49%;">
+<p><img data-src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Office_Outlook_Logo_256px.png" style="width:75.0%"></p>
+</div></div>
+</section>
+
+<section id="outlook-overview" class="title-slide slide level1 centeredslide center">
+<h1>Outlook Overview</h1>
+
+<img data-src="https://i.gyazo.com/cadbca20725120ffc1d68cb6b99d30b2.png" style="width:75.0%" class="r-stretch"></section>
+
+<section id="outlook-day-to-day" class="title-slide slide level1 centeredslide center">
+<h1>Outlook Day-to-Day</h1>
+
+<img data-src="https://i.gyazo.com/cbc94a3f77ad59c3389870a39233c23a.png" style="width:75.0%" class="r-stretch"></section>
+
+<section id="monday.com" class="title-slide slide level1 centeredslide center">
+<h1>Monday.com</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Monday.com Ltd.&nbsp;is a cloud-based platform that allows users to create their own applications and project management software.</li>
+<li>It is used to schedule/assign tasks, track project progress, etc.</li>
+</ul>
+<div title="Warning!">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning!</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>DO NOT UPLOAD UNNECESSARY FILES</li>
+<li>DO NOT UPLOAD PATIENT DATA</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:49%;">
+<p><img data-src="https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png" style="width:75.0%"></p>
+</div></div>
+</section>
+
+<section id="monday.com-my-work-page" class="title-slide slide level1 centeredslide center">
+<h1>Monday.com: My Work Page</h1>
+
+<img data-src="https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png" style="width:75.0%" class="r-stretch"></section>
+
+<section id="monday.com-project-page" class="title-slide slide level1 centeredslide center">
+<h1>Monday.com: Project Page</h1>
+
+<img data-src="https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png" style="width:75.0%" class="r-stretch"></section>
+
+<section id="monday.com-research-subgroup-page" class="title-slide slide level1 centeredslide center">
+<h1>Monday.com: Research Subgroup Page</h1>
+
+<img data-src="https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png" style="width:75.0%" class="r-stretch"></section>
+
+<section id="overleaf" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Overleaf “is a collaborative cloud-based LaTeX editor used for writing, editing and publishing scientific documents”.</li>
+<li>All papers, outlines, milestone documents, and some of our documentation is written with Overleaf. Easily shareable and great for bookkeeping</li>
+</ul>
+<div title="Learning Overleaf!">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Conjugate Momenta</strong></p>
+<p><strong>Learning Overleaf!</strong></p>
 </div>
 <div class="callout-content">
 <ul>
-<li>Introduce <span class="green-text"><span class="math inline">P_{\mu}(x) = P^{k}_{\mu}(x) \lambda^{k}</span></span> conjugate to <span class="purple-text"><span class="math inline">\omega^{k}_{\mu}(x)</span></span></li>
+<li>Learning LaTeX while your research expectations are lower is a good idea, trust me</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div title="Wilson Action" style="text-align:left;">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Wilson Action</strong></p>
-</div>
-<div class="callout-content">
-<p><span class="math display"> S_{G} = -\frac{\beta}{6} \sum
-\mathrm{Tr}\left[U_{\mu\nu}(x)
-+ U^{\dagger}_{\mu\nu}(x)\right] </span></p>
-<p>where <span class="math inline">U_{\mu\nu}(x) = U_{\mu}(x) U_{\nu}(x+\hat{\mu})
-U^{\dagger}_{\mu}(x+\hat{\nu}) U^{\dagger}_{\nu}(x)</span></p>
-</div>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:45%;">
-<div id="fig-4dlattice" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-4dlattice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="./assets/u1lattice.dark.svg" style="width:90.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4dlattice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: Illustration of the lattice
-</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="sec-hmcsu3" class="slide level2 center">
-<h2>HMC: 4D <span class="math inline">SU(3)</span></h2>
-<p>Hamiltonian: <span class="math inline">H[P, U] = \frac{1}{2} P^{2} + S[U] \Longrightarrow</span></p>
-<div class="columns">
-<div class="column" style="font-size:0.9em; text-align: center;">
-<div style="text-align:left;">
-<div class="callout callout-none no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<ul>
-<li><span style="border-bottom: 2px solid #AE81FF;"><span class="math inline">U</span> update</span>: <span class="purple-text" style="font-size:1.5em;"><span class="math inline">\frac{d\omega^{k}}{dt} = \frac{\partial H}{\partial P^{k}}</span></span> <span class="math display">\frac{d\omega^{k}}{dt}\lambda^{k} = P^{k}\lambda^{k} \Longrightarrow \frac{dQ}{dt} = P</span> <span class="math display">\begin{align*}
-Q(\textcolor{#FFEE58}{\varepsilon}) &amp;= Q(0) + \textcolor{#FFEE58}{\varepsilon} P(0)\Longrightarrow\\
--i\, \log U(\textcolor{#FFEE58}{\varepsilon}) &amp;= -i\, \log U(0) + \textcolor{#FFEE58}{\varepsilon} P(0) \\
-U(\textcolor{#FFEE58}{\varepsilon}) &amp;= e^{i\,\textcolor{#FFEE58}{\varepsilon} P(0)} U(0)\Longrightarrow \\
-&amp;\hspace{1pt}\\
-\textcolor{#FD971F}{\Lambda}:\,\, U \longrightarrow U' &amp;:= e^{i\varepsilon P'} U
-\end{align*}</span></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-</div><div class="column" style="font-size:0.9em; text-align: center;">
-<div style="text-align:left;">
-<div class="callout callout-none no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<ul>
-<li><span style="border-bottom: 2px solid #07B875;"><span class="math inline">P</span> update</span>: <span class="green-text" style="font-size:1.5em;"><span class="math inline">\frac{dP^{k}}{dt} = - \frac{\partial H}{\partial \omega^{k}}</span></span> <span class="math display">\frac{dP^{k}}{dt} = - \frac{\partial H}{\partial \omega^{k}}
-= -\frac{\partial H}{\partial Q} = -\frac{dS}{dQ}\Longrightarrow</span> <span class="math display">\begin{align*}
-P(\textcolor{#FFEE58}{\varepsilon}) &amp;= P(0) - \textcolor{#FFEE58}{\varepsilon} \left.\frac{dS}{dQ}\right|_{t=0} \\
-&amp;= P(0) - \textcolor{#FFEE58}{\varepsilon} \,\textcolor{#E599F7}{F[U]} \\
-&amp;\hspace{1pt}\\
-\textcolor{#F06292}{\Gamma}:\,\, P \longrightarrow P' &amp;:= P - \frac{\varepsilon}{2} F[U]
-\end{align*}</span></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-</div></div>
-<aside><div>
-<p><span class="dim-text" style="font-size:0.8em;"><span class="math inline">\textcolor{#FFEE58}{\varepsilon}</span> is the step size</span></p>
-</div><div>
-<p><span class="dim-text" style="font-size:0.8em;"><span class="math inline">\textcolor{#E599F7}{F[U]}</span> is the force term</span></p>
-</div></aside></section>
-<section id="hmc-4d-su3" class="slide level2 centeredslide center">
-<h2>HMC: 4D <span class="math inline">SU(3)</span></h2>
-<div class="columns">
-<div class="column" style="text-align:left;">
-<ul>
-<li><p><span style="border-bottom: 2px solid #F06292;">Momentum Update</span>: <span class="math display">\textcolor{#F06292}{\Gamma}: P \longrightarrow P' := P - \frac{\varepsilon}{2} F[U]</span></p></li>
-<li><p><span style="border-bottom: 2px solid #FD971F;">Link Update</span>: <span class="math display">\textcolor{#FD971F}{\Lambda}: U \longrightarrow U' := e^{i\varepsilon P'} U\quad\quad</span></p></li>
-<li><p>We maintain a batch of <code>Nb</code> lattices, all updated in parallel</p>
-<ul>
-<li><span class="math inline">U</span><code>.dtype = complex128</code></li>
-<li><span class="math inline">U</span><code>.shape</code><br>
-<span style="font-size: 0.95em;"><code>= [Nb, 4, Nt, Nx, Ny, Nz, 3, 3]</code></span></li>
-</ul></li>
-</ul>
-</div><div class="column" style="text-align:right;">
-<p><img data-src="./assets/hmc/hmc-update-light.svg" style="width:60.0%"></p>
-</div></div>
-</section></section>
-<section id="sec-su3networks" class="title-slide slide level1 centeredslide center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">Networks 4D <span class="math inline">SU(3)</span></h1>
-<div class="columns">
-<div class="column" style="font-size:0.9em;">
-<p>&nbsp;<br></p>
-<p>&nbsp;<br></p>
-<p><span class="purple-text"><span class="math inline">U</span></span>-Network:</p>
-<p><span style="font-size:0.9em;"><code>UNet:</code> <span class="math inline">(U, P) \longrightarrow \left(s_{U},\, t_{U},\, q_{U}\right)</span></span></p>
-<p>&nbsp;<br></p>
-<div style="border: 1px solid #1c1c1c; border-radius: 6px; padding:1%;">
-<p><span class="green-text"><span class="math inline">P</span></span>-Network:</p>
-<p><span style="font-size:0.9em;"><code>PNet:</code> <span class="math inline">(U, P) \longrightarrow \left(s_{P},\, t_{P},\, q_{P}\right)</span></span></p>
-</div>
-</div><div class="column" style="text-align:right;">
-<p><img data-src="./assets/leapfrog-layer-4D-SU3-vertical.light.svg" style="width:80.0%"></p>
-</div></div>
-</section>
-
-<section>
-<section id="networks-4d-su3" class="title-slide slide level1 centeredslide center" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">Networks 4D <span class="math inline">SU(3)</span></h1>
-<div class="columns">
-<div class="column" style="font-size:0.9em;">
-<p>&nbsp;<br></p>
-<p>&nbsp;<br></p>
-<p><span class="purple-text"><span class="math inline">U</span></span>-Network:</p>
-<p><span style="font-size:0.9em;"><code>UNet:</code> <span class="math inline">(U, P) \longrightarrow \left(s_{U},\, t_{U},\, q_{U}\right)</span></span></p>
-<p>&nbsp;<br></p>
-<div style="border: 1px solid #07B875; border-radius: 6px; padding:1%;">
-<p><span class="green-text"><span class="math inline">P</span></span>-Network:</p>
-<p><span style="font-size:0.9em;"><code>PNet:</code> <span class="math inline">(U, P) \longrightarrow \left(s_{P},\, t_{P},\, q_{P}\right)</span></span></p>
-</div>
-<p><span class="dim-text"><span class="math inline">\uparrow</span></span><br>
-<span class="dim-text" style="padding-top: 0.5em!important;">let’s look at this</span></p>
-</div><div class="column" style="text-align:right;">
-<p><img data-src="./assets/leapfrog-layer-4D-SU3-vertical.light.svg" style="width:80.0%"></p>
-</div></div>
-</section>
-<section id="p-network-pt.-1" class="slide level2 center" style="font-size:0.95em;">
-<h2><span class="math inline">P</span>-<code>Network</code> (pt.&nbsp;1)</h2>
-<div style="text-align:center;">
-<p><img data-src="./assets/SU3/PNetwork.light.svg"></p>
-</div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><span style="border-bottom: 2px solid rgba(131, 131, 131, 0.493);"><code>input</code><sup>1</sup>: <span class="math inline">\hspace{7pt}\left(U, F\right) := (e^{i Q}, F)</span></span> <span class="math display">\begin{align*}
-h_{0} &amp;= \sigma\left( w_{Q} Q + w_{F} F + b \right) \\
-h_{1} &amp;= \sigma\left( w_{1} h_{0} + b_{1} \right) \\
-&amp;\vdots \\
-h_{n} &amp;= \sigma\left(w_{n-1} h_{n-2} + b_{n}\right) \\
-\textcolor{#FF5252}{z} &amp; := \sigma\left(w_{n} h_{n-1} + b_{n}\right) \longrightarrow \\
-\end{align*}</span></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li><p><span style="border-bottom: 2px solid rgba(131, 131, 131, 0.5);"><code>output</code><sup>2</sup>: <span class="math inline">\hspace{7pt} (s_{P}, t_{P}, q_{P})</span></span></p>
-<ul>
-<li><span class="math inline">s_{P} = \lambda_{s} \tanh(w_s \textcolor{#FF5252}{z} + b_s)</span></li>
-<li><span class="math inline">t_{P} = w_{t} \textcolor{#FF5252}{z} + b_{t}</span></li>
-<li><span class="math inline">q_{P} = \lambda_{q} \tanh(w_{q} \textcolor{#FF5252}{z} + b_{q})</span></li>
-</ul></li>
-</ul>
-</div></div>
-
-<aside><div>
-<hr>
-<ol start="5">
-<li id="fn5"><p><span class="math inline">\sigma(\cdot)</span> denotes an activation function<a href="#/fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p><span class="math inline">\lambda_{s},\, \lambda_{q} \in \mathbb{R}</span> are trainable parameters<a href="#/fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</div><ol class="aside-footnotes"></ol></aside></section>
-<section id="p-network-pt.-2" class="slide level2 center" style="font-size:0.9em;">
-<h2><span class="math inline">P</span>-<code>Network</code> (pt.&nbsp;2)</h2>
-<div style="text-align:center;">
-<p><img data-src="./assets/SU3/PNetwork.light.svg"></p>
-</div>
-<ul>
-<li><p>Use <span class="math inline">(s_{P}, t_{P}, q_{P})</span> to update <span class="math inline">\Gamma^{\pm}: (U, P) \rightarrow
-\left(U, P_{\pm}\right)</span><sup>1</sup>:</p>
-<ul>
-<li><p><span style="color:#FF5252">forward</span> <span class="math inline">(d = \textcolor{#FF5252}{+})</span>: <span class="math display">\Gamma^{\textcolor{#FF5252}{+}}(U, P) := P_{\textcolor{#FF5252}{+}} = P \cdot e^{\frac{\varepsilon}{2} s_{P}} - \frac{\varepsilon}{2}\left[ F \cdot e^{\varepsilon q_{P}} + t_{P} \right]</span></p></li>
-<li><p><span style="color:#1A8FFF;">backward</span> <span class="math inline">(d = \textcolor{#1A8FFF}{-})</span>: <span class="math display">\Gamma^{\textcolor{#1A8FFF}{-}}(U, P) := P_{\textcolor{#1A8FFF}{-}} = e^{-\frac{\varepsilon}{2} s_{P}} \left\{P + \frac{\varepsilon}{2}\left[ F \cdot e^{\varepsilon q_{P}} + t_{P} \right]\right\}</span></p></li>
-</ul></li>
-</ul>
-
-<aside><div>
-<hr>
-<ol start="7">
-<li id="fn7"><p>Note that <span class="math inline">\left(\Gamma^{+}\right)^{-1} = \Gamma^{-}</span>, i.e.&nbsp;<span class="math inline">\Gamma^{+}\left[\Gamma^{-}(U, P)\right] = \Gamma^{-}\left[\Gamma^{+}(U, P)\right] = (U, P)</span><a href="#/fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</div><ol class="aside-footnotes"></ol></aside></section></section>
-<section>
-<section id="sec-results" class="title-slide slide level1 centeredslide center">
-<h1>Results: 2D <span class="math inline">U(1)</span></h1>
-<div class="columns">
-<div class="column" style="align:top;">
-<p><img data-src="https://raw.githubusercontent.com/saforem2/physicsSeminar/main/assets/autocorr_new.svg" style="width:90.0%"></p>
-</div><div class="column" style="text-align:left; padding-top: 5%;">
-<div title="Improvement" style="text-align:left!important;">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Improvement</strong></p>
-</div>
-<div class="callout-content">
-<p>We can measure the performance by comparing <span class="math inline">\tau_{\mathrm{int}}</span> for the <span style="color:#FF2052;"><strong>trained model</strong></span> vs. <span style="color:#9F9F9F;"><strong>HMC</strong></span>.</p>
-<p><strong>Note</strong>: <span style="color:#FF2052;">lower</span> is better</p>
-</div>
-</div>
-</div>
-</div>
-</div></div>
-<p><img data-src="https://raw.githubusercontent.com/saforem2/physicsSeminar/main/assets/charge_histories.svg" class="absolute" style="margin-bottom: 1em;margin-top: 1em;top: 400px; left: 0px; width: 100%; "></p>
-</section>
-<section id="sec-interpretation" class="slide level2 centeredslide center">
-<h2>Interpretation</h2>
-<div class="columns" style="margin-left:1pt;">
-<div class="column" style="width:36%;">
-<p><span class="dim-text" style="text-align:center; font-size:0.8em">Deviation in <span class="math inline">x_{P}</span></span></p>
-</div><div class="column" style="width:30%;">
-<p><span class="dim-text" style="text-align:right; font-size:0.8em">Topological charge mixing</span></p>
-</div><div class="column" style="width:32%;">
-<p><span class="dim-text" style="text-align:right!important; font-size:0.8em;">Artificial influx of energy</span></p>
-</div></div>
-
-<img data-src="https://raw.githubusercontent.com/saforem2/physicsSeminar/main/assets/ridgeplots.svg" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;8: Illustration of how different observables evolve over a single L2HMC trajectory.
-</p></section>
-<section id="interpretation" class="slide level2 centeredslide center">
-<h2>Interpretation</h2>
-<div id="fig-energy-ridgeplot" class="quarto-layout-panel">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-energy-ridgeplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://raw.githubusercontent.com/saforem2/physicsSeminar/main/assets/plaqsf_ridgeplot.svg"></p>
-<figcaption>Average plaquette: <span class="math inline">\langle x_{P}\rangle</span> vs LF step</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://raw.githubusercontent.com/saforem2/physicsSeminar/main/assets/Hf_ridgeplot.svg"></p>
-<figcaption>Average energy: <span class="math inline">H - \sum\log|\mathcal{J}|</span></figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-energy-ridgeplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;9: The trained model artifically increases the energy towards the middle of the trajectory, allowing the sampler to tunnel between isolated sectors.
-</figcaption>
-</figure>
-</div>
-</section></section>
-<section>
-<section id="sec-su3results" class="title-slide slide level1 center">
-<h1>4D <span class="math inline">SU(3)</span> Results</h1>
-<ul>
-<li>Distribution of <span class="math inline">\log|\mathcal{J}|</span> over all chains, at each <em>leapfrog step</em>, <span class="math inline">N_{\mathrm{LF}}</span> (<span class="math inline">= 0, 1, \ldots, 8</span>) during training:</li>
-</ul>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[ [30, 30, 30] ]" style="display: flex; flex-direction: row; margin-top: -0.0em; align-items: center;">
-<div class="quarto-layout-row quarto-layout-valign-center">
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div id="fig-ridgeplot1" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-ridgeplot1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="./assets/SU3/logdet_ridgeplot1.svg">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ridgeplot1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10: <code>100</code> train iters
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div id="fig-ridgeplot2" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-ridgeplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="./assets/SU3/logdet_ridgeplot2.svg">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ridgeplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11: <code>500</code> train iters
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div id="fig-ridgeplot3" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-ridgeplot3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="./assets/SU3/logdet_ridgeplot3.svg">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ridgeplot3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;12: <code>1000</code> train iters
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="d-su3-results-delta-u_munu" class="slide level2 center">
-<h2>4D <span class="math inline">SU(3)</span> Results: <span class="math inline">\delta U_{\mu\nu}</span></h2>
-
-<img data-src="./assets/SU3/pdiff.svg" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;13: The difference in the average plaquette <span class="math inline">\left|\delta U_{\mu\nu}\right|^{2}</span> between the trained model and HMC
-</p></section>
-<section id="d-su3-results-delta-u_munu-1" class="slide level2 center">
-<h2>4D <span class="math inline">SU(3)</span> Results: <span class="math inline">\delta U_{\mu\nu}</span></h2>
-
-<img data-src="./assets/SU3/pdiff-robust.svg" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;14: The difference in the average plaquette <span class="math inline">\left|\delta U_{\mu\nu}\right|^{2}</span> between the trained model and HMC
-</p></section></section>
-<section>
-<section id="sec-next-steps" class="title-slide slide level1 center">
-<h1>Next Steps</h1>
-<ul>
-<li><p>Further code development</p>
-<ul>
-<li><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/saforem2/l2hmc-qcd"><code>saforem2/l2hmc-qcd</code></a></li>
-</ul></li>
-<li><p>Continue to use / test different network architectures</p>
-<ul>
-<li>Gauge equivariant NNs for <span class="math inline">U_{\mu}(x)</span> update</li>
-</ul></li>
-<li><p>Continue to test different loss functions for training</p></li>
-<li><p>Scaling:</p>
-<ul>
-<li>Lattice volume</li>
-<li>Network size</li>
-<li>Batch size</li>
-<li># of GPUs</li>
-</ul></li>
-</ul>
-</section>
-<section id="sec-thank-you" class="slide level2 center">
-<h2>Thank you!</h2>
-<p>&nbsp;<br></p>
-<div>
-
-</div>
-<div class="quarto-layout-panel" style="text-align:left; font-size:0.8em;" data-layout-ncol="4">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><span style="font-size:0.8em;"><a href="https://samforeman.me"><i class="fa-solid fa-home" aria-label="home"></i> <code>samforeman.me</code></a></span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><span style="font-size:0.8em;"><a href="https://github.com/saforem2"><i class="fa-brands fa-github" aria-label="github"></i> <code>saforem2</code></a></span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><span style="font-size:0.8em;"><a href="https://www.twitter.com/saforem2"><i class="fa-brands fa-twitter" aria-label="twitter"></i> <code>@saforem2</code></a></span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
-<p><span style="font-size:0.8em;"><a href="mailto:///foremans@anl.gov"><i class="fa-regular fa-paper-plane" aria-label="paper-plane"></i> <code>foremans@anl.gov</code></a></span></p>
-</div>
-</div>
-</div>
-<div title="Acknowledgements">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Acknowledgements</strong></p>
-</div>
-<div class="callout-content">
-<p>This research used resources of the Argonne Leadership Computing Facility,<br>
-which is a DOE Office of Science User Facility supported under Contract DE-AC02-06CH11357.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="sec-l2hmc-gh" class="slide level2 center">
-<h2></h2>
-<div style="text-align:center;">
-<p><a href="https://github.com/saforem2/l2hmc-qcd"><img data-src="https://raw.githubusercontent.com/saforem2/l2hmc-qcd/main/assets/logo-small.svg"></a></p>
-<p><a href="https://hits.seeyoufarm.com"><img alt="hits" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsaforem2%2Fl2hmc-qcd&amp;count_bg=%2300CCFF&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23111111&amp;title=👋&amp;edge_flat=false"></a> <a href="https://github.com/saforem2/l2hmc-qcd/"><img alt="l2hmc-qcd" src="https://img.shields.io/badge/-l2hmc--qcd-252525?style=flat&amp;logo=github&amp;labelColor=gray"></a> <a href="https://www.codefactor.io/repository/github/saforem2/l2hmc-qcd"><img alt="codefactor" src="https://www.codefactor.io/repository/github/saforem2/l2hmc-qcd/badge"></a></p>
-<p><a href="https://arxiv.org/abs/2112.01582"><img alt="arxiv" src="http://img.shields.io/badge/arXiv-2112.01582-B31B1B.svg"></a> <a href="https://arxiv.org/abs/2105.03418"><img alt="arxiv" src="http://img.shields.io/badge/arXiv-2105.03418-B31B1B.svg"></a></p>
-<p><a href="https://hydra.cc"><img alt="hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a> <a href="https://pytorch.org/get-started/locally/"><img alt="pyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&amp;logoColor=white"></a> <a href="https://www.tensorflow.org"><img alt="tensorflow" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?&amp;logo=TensorFlow&amp;logoColor=white"></a> <a href="https://wandb.ai/l2hmc-qcd/l2hmc-qcd"><img src="https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-28.svg" alt="Weights &amp; Biases monitoring" height="20"></a></p>
-</div>
-</section>
-<section id="sec-acknowledgements" class="slide level2 center">
-<h2>Acknowledgements</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>Links</strong>:
-<ul>
-<li><a href="https://github.com/saforem2/l2hmc-qcd"><i class="fa-brands fa-github" aria-label="github"></i> Link to github</a></li>
-<li><a href="mailto:foremans@anl.gov"><i class="fa-solid fa-paper-plane" aria-label="paper-plane"></i> reach out!</a></li>
-</ul></li>
-<li><strong>References</strong>:
-<ul>
-<li><a href="https://saforem2.github.io/lattice23/">Link to slides</a>
-<ul>
-<li><a href="https://github.com/saforem2/lattice23"><i class="fa-brands fa-github" aria-label="github"></i> link to github with slides</a></li>
-</ul></li>
-<li><i class="fa-solid fa-book" aria-label="book"></i> <span class="citation" data-cites="Foreman:2021ljl Foreman:2021rhs Foreman:2021ixr">(<a href="#/references-1" role="doc-biblioref" onclick="">Foreman et al. 2022</a>; <a href="#/references-1" role="doc-biblioref" onclick="">Foreman, Jin, and Osborn 2022</a>, <a href="#/references-1" role="doc-biblioref" onclick="">2021</a>)</span></li>
-<li><i class="fa-solid fa-book" aria-label="book"></i> <span class="citation" data-cites="Boyda:2022nmh Shanahan:2022ifi">(<a href="#/references-1" role="doc-biblioref" onclick="">Boyda et al. 2022</a>; <a href="#/references-1" role="doc-biblioref" onclick="">Shanahan et al. 2022</a>)</span></li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Huge thank you to:
-<ul>
-<li>Yannick Meurice</li>
-<li>Norman Christ</li>
-<li>Akio Tomiya</li>
-<li>Nobuyuki Matsumoto</li>
-<li>Richard Brower</li>
-<li>Luchang Jin</li>
-<li>Chulwoo Jung</li>
-<li>Peter Boyle</li>
-<li>Taku Izubuchi</li>
-<li>Denis Boyda</li>
-<li>Dan Hackett</li>
-<li>ECP-CSD group</li>
-<li><span class="red-text"><strong>ALCF Staff + Datascience Group</strong></span></li>
-</ul></li>
-</ul>
-</div></div>
-</section>
-<section id="sec-references" class="slide level2 center">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="links">Links</h3>
-<ul>
-<li><p><a href="https://github.com/saforem2/l2hmc-qcd"><i class="fa-brands fa-github" aria-label="github"></i> <code>saforem2/l2hmc-qcd</code></a></p></li>
-<li><p><a href="https://saforem2.github.io/lattice23">📊 slides</a> (Github: <a href="https://github.com/saforem2/lattice23"><i class="fa-brands fa-github" aria-label="github"></i> <code>saforem2/lattice23</code></a>)</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<h3 id="references">References</h3>
-<ul>
-<li><a href="https://saforem2.github.io/grid-worms-animation/">Title Slide Background (worms) animation</a>
-<ul>
-<li>Github: <a href="https://github.com/saforem2/grid-worms-animation"><i class="fa-brands fa-github" aria-label="github"></i> <code>saforem2/grid-worms-animation</code></a></li>
-</ul></li>
-<li><a href="https://chi-feng.github.io/mcmc-demo/app.html">Link to HMC demo</a></li>
-</ul>
-</div></div>
-</section>
-<section id="references-1" class="slide level2 smaller scrollable" style="line-height:1.2em;">
-<h2>References</h2>
-<p>(I don’t know why this is broken 🤷🏻‍♂️ )</p>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-Boyda:2022nmh" class="csl-entry" role="listitem">
-Boyda, Denis et al. 2022. <span>“<span class="nocase">Applications of Machine Learning to Lattice Quantum Field Theory</span>.”</span> In <em><span>Snowmass 2021</span></em>. <a href="https://arxiv.org/abs/2202.05838">https://arxiv.org/abs/2202.05838</a>.
-</div>
-<div id="ref-Foreman:2021ljl" class="csl-entry" role="listitem">
-Foreman, Sam, Taku Izubuchi, Luchang Jin, Xiao-Yong Jin, James C. Osborn, and Akio Tomiya. 2022. <span>“<span class="nocase">HMC with Normalizing Flows</span>.”</span> <em>PoS</em> LATTICE2021: 073. <a href="https://doi.org/10.22323/1.396.0073">https://doi.org/10.22323/1.396.0073</a>.
-</div>
-<div id="ref-Foreman:2021ixr" class="csl-entry" role="listitem">
-Foreman, Sam, Xiao-Yong Jin, and James C. Osborn. 2021. <span>“<span>Deep Learning Hamiltonian Monte Carlo</span>.”</span> In <em><span class="nocase">9th International Conference on Learning Representations</span></em>. <a href="https://arxiv.org/abs/2105.03418">https://arxiv.org/abs/2105.03418</a>.
-</div>
-<div id="ref-Foreman:2021rhs" class="csl-entry" role="listitem">
-———. 2022. <span>“<span class="nocase">LeapfrogLayers: A Trainable Framework for Effective Topological Sampling</span>.”</span> <em>PoS</em> LATTICE2021 (May): 508. <a href="https://doi.org/10.22323/1.396.0508">https://doi.org/10.22323/1.396.0508</a>.
-</div>
-<div id="ref-Shanahan:2022ifi" class="csl-entry" role="listitem">
-Shanahan, Phiala et al. 2022. <span>“<span>Snowmass 2021 Computational Frontier CompF03 Topical Group Report: Machine Learning</span>,”</span> September. <a href="https://arxiv.org/abs/2209.07559">https://arxiv.org/abs/2209.07559</a>.
-</div>
-</div>
-</section></section>
-<section>
-<section id="sec-extras" class="title-slide slide level1 center">
-<h1>Extras</h1>
-
-</section>
-<section id="integrated-autocorrelation-time" class="slide level2 centeredslide center">
-<h2>Integrated Autocorrelation Time</h2>
-
-<img data-src="https://raw.githubusercontent.com/saforem2/physicsSeminar/main/assets/tint1.svg" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;15: Plot of the integrated autocorrelation time for both the trained model (colored) and HMC (greyscale).
-</p></section>
-<section id="comparison" class="slide level2 center">
-<h2>Comparison</h2>
-<div id="fig-comparison" class="quarto-layout-panel">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-comparison" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-eval" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-subfloat-fig">
-<div aria-describedby="fig-eval-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="https://saforem2.github.io/anl-job-talk/assets/dQint_eval.svg" data-ref-parent="fig-comparison">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-eval-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) Trained model
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-comparison" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-hmc" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-subfloat-fig">
-<div aria-describedby="fig-hmc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="https://saforem2.github.io/anl-job-talk/assets/dQint_hmc.svg" data-ref-parent="fig-comparison">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-hmc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(b) Generic HMC
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;16: Comparison of <span class="math inline">\langle \delta Q\rangle = \frac{1}{N}\sum_{i=k}^{N} \delta Q_{i}</span> for the trained model <a href="#/comparison" class="quarto-xref">Figure&nbsp;16 (a)</a> vs.&nbsp;HMC <a href="#/comparison" class="quarto-xref">Figure&nbsp;16 (b)</a>
-</figcaption>
-</figure>
-</div>
-</section>
-<section id="plaquette-analysis-x_p" class="slide level2 centeredslide center">
-<h2>Plaquette analysis: <span class="math inline">x_{P}</span></h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p><span class="dim-text" style="text-align:center; font-size:0.9em;">Deviation from <span class="math inline">V\rightarrow\infty</span> limit, <span class="math inline">x_{P}^{\ast}</span></span></p>
-</div><div class="column" style="width:45%;">
-<p><span class="dim-text" style="text-align:right!important; font-size:0.9em;">Average <span class="math inline">\langle x_{P}\rangle</span>, with <span class="math inline">x_{P}^{\ast}</span> (dotted-lines)</span></p>
-</div></div>
-
-<img data-src="https://raw.githubusercontent.com/saforem2/physicsSeminar/main/assets/plaqsf_vs_lf_step1.svg" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;17: Plot showing how <strong>average plaquette</strong>, <span class="math inline">\left\langle x_{P}\right\rangle</span> varies over a single trajectory for models trained at different <span class="math inline">\beta</span>, with varying trajectory lengths <span class="math inline">N_{\mathrm{LF}}</span>
-</p></section>
-<section id="loss-function" class="slide level2 center">
-<h2>Loss Function</h2>
-<ul>
-<li><p>Want to maximize the <em>expected</em> squared charge difference<sup>1</sup>: <span class="math display">\begin{equation*}
-\mathcal{L}_{\theta}\left(\xi^{\ast}, \xi\right) =
-{\mathbb{E}_{p(\xi)}}\big[-\textcolor{#FA5252}{{\delta Q}}^{2}
-\left(\xi^{\ast}, \xi \right)\cdot A(\xi^{\ast}|\xi)\big]
-\end{equation*}</span></p></li>
-<li><p>Where:</p>
-<ul>
-<li><p><span class="math inline">\delta Q</span> is the <em>tunneling rate</em>: <span class="math display">\begin{equation*}
-\textcolor{#FA5252}{\delta Q}(\xi^{\ast},\xi)=\left|Q^{\ast} - Q\right|
-\end{equation*}</span></p></li>
-<li><p><span class="math inline">A(\xi^{\ast}|\xi)</span> is the probability<sup>2</sup> of accepting the proposal <span class="math inline">\xi^{\ast}</span>: <span class="math display">\begin{equation*}
-A(\xi^{\ast}|\xi) = \mathrm{min}\left( 1,
-\frac{p(\xi^{\ast})}{p(\xi)}\left|\frac{\partial \xi^{\ast}}{\partial
-\xi^{T}}\right|\right)
-\end{equation*}</span></p></li>
-</ul></li>
-</ul>
-
-<aside><div>
-<hr>
-<ol start="8">
-<li id="fn8"><p>Where <span class="math inline">\xi^{\ast}</span> is the <em>proposed</em> configuration (prior to Accept / Reject)<a href="#/fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>And <span class="math inline">\left|\frac{\partial \xi^{\ast}}{\partial \xi^{T}}\right|</span> is the Jacobian of the transformation from <span class="math inline">\xi \rightarrow \xi^{\ast}</span><a href="#/fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</div><ol class="aside-footnotes"></ol></aside></section>
-<section id="networks-2d-u1" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Networks 2D <span class="math inline">U(1)</span></h2>
-<ul>
-<li><p>Stack gauge links as <code>shape</code><span class="math inline">\left(U_{\mu}\right)</span><code>=[Nb, 2, Nt, Nx]</code> <span class="math inline">\in \mathbb{C}</span></p>
-<p><span class="math display"> x_{\mu}(n) ≔ \left[\cos(x), \sin(x)\right]</span></p>
-<p>with <code>shape</code><span class="math inline">\left(x_{\mu}\right)</span><code>= [Nb, 2, Nt, Nx, 2]</code> <span class="math inline">\in \mathbb{R}</span></p></li>
-<li><p><span class="math inline">x</span>-Network:</p>
-<ul>
-<li><span class="purple-text"><span class="math inline">\psi_{\theta}: (x, v) \longrightarrow \left(s_{x},\, t_{x},\, q_{x}\right)</span></span></li>
-</ul></li>
-<li><p><span class="math inline">v</span>-Network:</p>
-<ul>
-<li><span class="green-text"><span class="math inline">\varphi_{\theta}: (x, v) \longrightarrow \left(s_{v},\, t_{v},\, q_{v}\right)</span></span> <span class="dim-text"><span class="math inline">\hspace{2pt}\longleftarrow</span> lets look at this</span></li>
-</ul></li>
-</ul>
-</section>
-<section id="v-updatereverse" class="slide level2 center">
-<h2><span class="math inline">v</span>-Update<sup>1</sup></h2>
-<ul>
-<li><span style="color:#FF5252">forward</span> <span class="math inline">(d = \textcolor{#FF5252}{+})</span>:</li>
-</ul>
-<p><span class="math display">\Gamma^{\textcolor{#FF5252}{+}}: (x, v) \rightarrow v' := v \cdot e^{\frac{\varepsilon}{2} s_{v}} - \frac{\varepsilon}{2}\left[ F \cdot e^{\varepsilon q_{v}} + t_{v} \right]</span></p>
-<ul>
-<li><span style="color:#1A8FFF;">backward</span> <span class="math inline">(d = \textcolor{#1A8FFF}{-})</span>:</li>
-</ul>
-<p><span class="math display">\Gamma^{\textcolor{#1A8FFF}{-}}: (x, v) \rightarrow v' := e^{-\frac{\varepsilon}{2} s_{v}} \left\{v + \frac{\varepsilon}{2}\left[ F \cdot e^{\varepsilon q_{v}} + t_{v} \right]\right\}</span></p>
-
-<aside><div>
-<hr>
-<ol start="10">
-<li id="fn10"><p><span style="font-size:0.8em;">Note that <span class="math inline">\left(\Gamma^{+}\right)^{-1} = \Gamma^{-}</span>, i.e.&nbsp;<span class="math inline">\Gamma^{+}\left[\Gamma^{-}(x, v)\right] = \Gamma^{-}\left[\Gamma^{+}(x, v)\right] = (x, v)</span></span><a href="#/fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</div><ol class="aside-footnotes"></ol></aside></section>
-<section id="x-update" class="slide level2 center">
-<h2><span class="math inline">x</span>-Update</h2>
-<ul>
-<li><span style="color:#FF5252">forward</span> <span class="math inline">(d = \textcolor{#FF5252}{+})</span>:</li>
-</ul>
-<p><span class="math display">\Lambda^{\textcolor{#FF5252}{+}}(x, v) = x \cdot e^{\frac{\varepsilon}{2} s_{x}} - \frac{\varepsilon}{2}\left[ v \cdot e^{\varepsilon q_{x}} + t_{x} \right]</span></p>
-<ul>
-<li><span style="color:#1A8FFF;">backward</span> <span class="math inline">(d = \textcolor{#1A8FFF}{-})</span>:</li>
-</ul>
-<p><span class="math display">\Lambda^{\textcolor{#1A8FFF}{-}}(x, v) = e^{-\frac{\varepsilon}{2} s_{x}} \left\{x + \frac{\varepsilon}{2}\left[ v \cdot e^{\varepsilon q_{x}} + t_{x} \right]\right\}</span></p>
-</section>
-<section id="lattice-gauge-theory-2d-u1" class="slide level2 centeredslide center">
-<h2>Lattice Gauge Theory (2D <span class="math inline">U(1)</span>)</h2>
-<div class="columns" data-layout-valign="top">
-<div class="column" style="width:50%;">
-<div style="text-align:center;">
-<div title="Link Variables">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Link Variables</strong></p>
-</div>
-<div class="callout-content">
-<p><span class="math display">U_{\mu}(n) = e^{i x_{\mu}(n)}\in \mathbb{C},\quad \text{where}\quad</span> <span class="math display">x_{\mu}(n) \in [-\pi,\pi)</span></p>
-</div>
-</div>
-</div>
-</div>
-<div>
-<div title="Wilson Action">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Wilson Action</strong></p>
-</div>
-<div class="callout-content">
-<p><span class="math display">S_{\beta}(x) = \beta\sum_{P} \cos \textcolor{#00CCFF}{x_{P}},</span></p>
-<p><span class="math display">\textcolor{#00CCFF}{x_{P}} = \left[x_{\mu}(n) + x_{\nu}(n+\hat{\mu})
-- x_{\mu}(n+\hat{\nu})-x_{\nu}(n)\right]</span></p>
-</div>
-</div>
-</div>
-</div>
-<p><span class="dim-text" style="font-size:0.8em;"><strong>Note</strong>: <span class="math inline">\textcolor{#00CCFF}{x_{P}}</span> is the product of links around <span class="math inline">1\times 1</span> square, called a <span class="blue-text">“plaquette”</span></span></p>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://raw.githubusercontent.com/saforem2/deep-fridays/main/assets/u1lattice.dark.svg" style="width:80.0%"></p>
-<figcaption>2D Lattice</figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="section-1" class="slide level2 center" data-background-color="white">
-<h2></h2>
-<div id="fig-notebook" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-notebook-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<iframe data-src="https://nbviewer.org/github/saforem2/l2hmc-qcd/blob/SU3/src/l2hmc/notebooks/l2hmc-2dU1.ipynb" width="100%" height="650" title="l2hmc-qcd">
+</div><div class="column" style="width:49%;">
+<iframe data-src="https://cdn.dribbble.com/users/95028/screenshots/2256537/overleaf-logo2.gif" width="100%" height="800" title="l2hmc-qcd">
 </iframe>
+</div></div>
+</section>
+
+<section id="overleaf-latex" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf: LaTeX</h1>
+<div class="columns">
+<ul>
+<li>LATEX is a tool for typesetting professional-looking documents</li>
+<li>LaTeX works very differently: instead of a interactive page to type and edit text with, your document is a plain text file interspersed with LaTeX commands used to express the desired (typeset) results.</li>
+<li>To produce a visible, typeset document, your LaTeX file is processed by a piece of software called a TeX engine which uses the commands embedded in your text file to guide and control the typesetting process, converting the LaTeX commands and document text into a professionally typeset PDF file</li>
+</ul>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-notebook-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;18: Jupyter Notebook
-</figcaption>
-</figure>
+</section>
+
+<section id="overleaf-writing-your-first-piece-of-latex" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf: Writing your first piece of LATEX</h1>
+<ul>
+<li><h2 id="creating-a-document-and-writing-some-text">Creating a document and writing some text</h2>
+<pre><code>\documentclass{article}
+\begin{document}
+First document. This is a simple example, with no 
+extra parameters or packages included.
+\end{document}</code></pre>
+<ul>
+<li>Will produce the following image
+<ul>
+<li><img data-src="https://images.ctfassets.net/nrgyaltdicpt/5oBbZABsWEnHZpwhfvV2PD/95ba7d5496616b4f10dffe6fb90f578a/LL30Fig1-plain.svg" style="width:75.0%"></li>
+</ul></li>
+</ul></li>
+<li>Not always this easy. Some journals/conferences require specific formats</li>
+</ul>
+</section>
+
+<section id="overleaf-document-pre-amble" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf: Document Pre-amble</h1>
+<div class="columns">
+<div class="column" style="width:48%;">
+<ul>
+<li>Everything in your .tex file appearing before \begin document is called the preamble, which acts as the document’s “setup” section.</li>
+</ul>
+<div title="Document Settings">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Document Settings</strong></p>
+</div>
+<div class="callout-content">
+<pre><code>\documentclass[12pt, letterpaper]{article}
+\usepackage{graphicx}
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>In this example, we are setting both:
+<ul>
+<li>The font size to 12 pt</li>
+<li>The paper size to letterpaper</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:49%;">
+<ul>
+<li>Overleaf is compatible with a bunch of different libraries, packages that you can use to your advantage. To do so, you’d want to include something like the following:</li>
+</ul>
+<div title="Package Import">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Package Import</strong></p>
+</div>
+<div class="callout-content">
+<pre><code>\usepackage{graphicx}
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>For more info on what packages are available and their functionality, you can visit the following <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Finding_and_using_LaTeX_packages">page</a></li>
+</ul>
+</div></div>
+</section>
+
+<section id="overleaf-including-title-author-and-date-information" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf: Including title, author and date information</h1>
+<div class="columns">
+<ul>
+<li>Adding a title, author and date to our document requires three more lines in the preamble (not the main body of the document). Those lines are:</li>
+</ul><div title="Author/Date Information">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Author/Date Information</strong></p>
+</div>
+<div class="callout-content">
+<pre><code>\title{My first LaTeX document}: 
+\author{Hubert Farnsworth}: 
+
+\thanks{Funded by the Overleaf team.}: 
+
+\date{August 2022}: </code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="annealing-schedule" class="slide level2 center">
-<h2>Annealing Schedule</h2>
-<ul>
-<li><p>Introduce an <em>annealing schedule</em> during the training phase:</p>
-<p><span class="math display">\left\{ \gamma_{t}  \right\}_{t=0}^{N} = \left\{\gamma_{0}, \gamma_{1},
-\ldots, \gamma_{N-1}, \gamma_{N} \right\}</span></p>
-<p>where <span class="math inline">\gamma_{0} &lt; \gamma_{1} &lt; \cdots &lt; \gamma_{N} \equiv 1</span>, and <span class="math inline">\left|\gamma_{t+1} - \gamma_{t}\right| \ll 1</span></p></li>
-<li><p><span class="green-text"><strong>Note</strong></span>:</p>
-<ul>
-<li>for <span class="math inline">\left|\gamma_{t}\right| &lt; 1</span>, this rescaling helps to reduce the height of the energy barriers <span class="math inline">\Longrightarrow</span></li>
-<li>easier for our sampler to explore previously inaccessible regions of the phase space</li>
-</ul></li>
-</ul>
+
+<section id="overleaf-adding-comments" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf: Adding comments</h1>
+<div class="columns">
+<p>To make a comment in LATEX, simply write a % symbol at the beginning of the line, as shown in the following code which uses the example above:</p><div title="Example Comment Line">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Example Comment Line</strong></p>
+</div>
+<div class="callout-content">
+<pre><code>% This line here is a comment. It will not be typeset in the document.
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="networks-2d-u1-1" class="slide level2 center">
-<h2>Networks 2D <span class="math inline">U(1)</span></h2>
+
+<section id="overleaf-bold-italics-and-underlining" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf: Bold, italics and underlining</h1>
+<div class="columns">
 <ul>
-<li><p>Stack gauge links as <code>shape</code><span class="math inline">\left(U_{\mu}\right)</span><code>=[Nb, 2, Nt, Nx]</code> <span class="math inline">\in \mathbb{C}</span></p>
-<p><span class="math display"> x_{\mu}(n) ≔ \left[\cos(x), \sin(x)\right]</span></p>
-<p>with <code>shape</code><span class="math inline">\left(x_{\mu}\right)</span><code>= [Nb, 2, Nt, Nx, 2]</code> <span class="math inline">\in \mathbb{R}</span></p></li>
-<li><p><span class="math inline">x</span>-Network:</p>
-<ul>
-<li><span class="purple-text"><span class="math inline">\psi_{\theta}: (x, v) \longrightarrow \left(s_{x},\, t_{x},\, q_{x}\right)</span></span></li>
-</ul></li>
-<li><p><span class="math inline">v</span>-Network:</p>
-<ul>
-<li><span class="green-text"><span class="math inline">\varphi_{\theta}: (x, v) \longrightarrow \left(s_{v},\, t_{v},\, q_{v}\right)</span></span></li>
-</ul></li>
-</ul>
+<li><strong>Bold</strong> : bold text in LaTeX is typeset using the command.</li>
+<li><em>Italics</em> : italicised text is produced using the command.</li>
+<li><ins>
+Underline
+</ins>
+: to underline text use the command.</li>
+</ul><div title="Example Usage Line">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Example Usage Line</strong></p>
+</div>
+<div class="callout-content">
+<pre><code>Some of the \textbf{greatest}
+discoveries in \underline{science} 
+were made by \textbf{\textit{accident}}.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="toy-example-gmm-in-mathbbr2" class="slide level2 centeredslide center">
-<h2>Toy Example: GMM <span class="math inline">\in \mathbb{R}^{2}</span></h2>
 
-<img data-src="https://raw.githubusercontent.com/saforem2/l2hmc-dwq25/main/docs/assets/iso_gmm_chains.svg" id="fig-gmm" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;19
-</p></section>
-<section id="physical-quantities" class="slide level2 center">
-<h2>Physical Quantities</h2>
+<section id="overleaf-adding-images" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf: Adding Images</h1>
+<div class="columns">
+<p>Overleaf supports three ways to insert images:</p><div class="column" style="width:49%;">
 <ul>
-<li>To estimate physical quantities, we:
-<ul>
-<li>Calculate physical observables at <strong>increasing</strong> spatial resolution</li>
-<li>Perform extrapolation to continuum limit</li>
-</ul></li>
+<li>Use the Insert Figure button(<img data-src="https:​/​/​sharelatex-wiki-cdn-671420.c.cdn77.org/​learn-scripts/​images/​a/​a8/​InsertFigureButton.png" style="width:75.0%">), located on the editor toolbar, to insert an image into Visual Editor or Code Editor.</li>
+<li>Copy and paste an image into Visual Editor or Code Editor.</li>
+<li>Use Code Editor to write LaTeX code that inserts a graphic. ​</li>
 </ul>
+</div><div class="column" style="width:49%;">
+<div title="Example of Image Inclusion">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Example of Image Inclusion</strong></p>
+</div>
+<div class="callout-content">
+<pre><code>\documentclass{article}
+\usepackage{graphicx} %LaTeX package to import graphics
+\graphicspath{{images/}} %configuring the graphicx package
+ 
+\begin{document}
+The universe is immense and it seems to be homogeneous, 
+on a large scale, everywhere we look.
 
-<img data-src="https://raw.githubusercontent.com/saforem2/physicsSeminar/main/assets/static/continuum.svg" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;20: Increasing the physical resolution (<span class="math inline">a \rightarrow 0</span>) allows us to make predictions about numerical values of physical quantities in the continuum limit.
-</p></section></section>
-<section id="extra" class="title-slide slide level1 center">
-<h1>Extra</h1>
+% The \includegraphcs command is 
+% provided (implemented) by the 
+% graphicx package
+\includegraphics{universe}  
+ 
+There's a picture of a galaxy above.
+\end{document}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</section>
 
+<section id="overleaf-captions-labels-references" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf: Captions, labels, references</h1>
+<div class="columns">
+<pre><code>\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+ 
+\begin{document}
 
-<img data-src="./assets/thumbnail.png" class="r-stretch"><div class="quarto-auto-generated-content">
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{mesh}
+    \caption{A nice plot.}
+    \label{fig:mesh1}
+\end{figure}
+ 
+As you can see in figure \ref{fig:mesh1}, the function grows near the origin. This example is on page \pageref{fig:mesh1}.
+
+\end{document}</code></pre>
+</div>
+</section>
+
+<section id="overleaf-link-sharing" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf: Link Sharing</h1>
+<iframe data-src="https://images.contentful.com/nrgyaltdicpt/20neyIS8962IgXcQH6beDo/2dd30bbb1ca0325a55fecb93666aa98d/ProjectSharing.gif" width="90%" height="500" title="l2hmc-qcd">
+</iframe>
+</section>
+
+<section id="overleaf-more-to-learn" class="title-slide slide level1 centeredslide center">
+<h1>Overleaf: More to Learn</h1>
+<div class="columns">
+
+</div>
+</section>
+
+<section id="whitesides-outline" class="title-slide slide level1 centeredslide center">
+<h1>Whiteside’s Outline</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Based on a paper by Harvard Professor/American chemist George Whiteside</li>
+<li>Idea behind his work on papers was that “it is most efficient to write papers from outlines”</li>
+</ul>
+</div><div class="column" style="width:49%;">
+<p><img data-src="https://media.sciencephoto.com/image/c0068504/800wm.svg" style="width:75.0%"></p>
+</div></div>
+</section>
+
+<section id="whitesides-outline-overview" class="title-slide slide level1 centeredslide center">
+<h1>Whiteside’s Outline: Overview</h1>
+<div class="columns">
+<ul>
+<li>I’m not teaching you this, you gotta look through the documentation in the Randles Lab Documentation thingy</li>
+</ul>
+</div>
+
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
