@@ -4,6 +4,7 @@ format:
     title-block-style: none
     slide-number: c
     title-slide-style: default
+    incremental: true #do later
     chalkboard:
       buttons: false
     auto-animate: true
@@ -23,7 +24,7 @@ format:
     embed-resources: false
     self-contained-math: false
     center: true
-    highlight-style: "atom-one"
+    highlight-style: "breeze"
     default-image-extension: svg
     code-line-numbers: true
     code-overflow: scroll
@@ -50,24 +51,27 @@ format:
 
 # Overview
 
-1. [Background:](#markov-chain-monte-carlo-mcmc-centeredslide)
-2. [Documentation](#sec-l2hmc)
-    - [Wiki](#sec-su3)
-    - [Box](#sec-results)
-    - [Outlook](#sec-extras)
-3. [Monday.com](#sec-references)
-4. [Overleaf](#sec-extras)
+1. [Background](#background)
+    - [Why Do We Care](#wecare)
+2. [Documentation](#documentation)
+    - [Wiki](#wiki)
+    - [Box](#box)
+    - [Outlook](#outlook)
+3. [Monday.com](#monday)
+4. [Overleaf](#overleaf)
 5. [Whiteside's](#whitesides)
 
 
-# Background {.centeredslide}
+# Background {#background .centeredslide}
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 
+::: {.fragment .fade-in-then-out-out}
 ::: {.callout-note title="Goal" style="text-align:left;!important"}
 Get you guys caught up on the different resources available in the lab. 
+:::
 :::
 
 - It's **important** to note that the expectation is to keep up with each of these resources.
@@ -75,23 +79,23 @@ Get you guys caught up on the different resources available in the lab.
 - <span style="color:#ff8281;">Ex</span>: Monday pages are checked at random and during project meetings
 
 :::
-
 ::: {.column width="49%"}
+::: {.fragment .fade-in-then-out-out}
+
 ![](https://images.ctfassets.net/xz1dnu24egyd/3FbNmZRES38q2Sk2EcoT7a/a290dc207a67cf779fc7c2456b177e9f/press-kit-icon.svg){width=25%}
 ![](https://images.ctfassets.net/nrgyaltdicpt/lrfSTdfvhXxtaEcldEGV0/6932002ad80fc61ef60c01c7e09c8e79/overleaf-logo-white.svg){width=50%}
 ![](https://seeklogo.com/images/C/confluence-logo-D9B07137C2-seeklogo.com.png){width=30%}
 ![](https://monday.com/p/wp-content/uploads/2024/03/Logo-1-NO-1.png){width=50%}
 :::
-
-::::
-
-You are not expected to be experts by the end of this, but familiarty with each of these is  <span style="color:#9c90fa;">expected</span>. 
-
-::: footer
-[{{< fa brands github >}} `saforem2/lattice23`](https://saforem2.github.io/lattice23)
 :::
 
-# Why Do We Care {.centeredslide}
+::::
+::: {.fragment .fade-in-then-out-out}
+You are not expected to be experts by the end of this, but familiarty with each of these is  <span style="color:#9c90fa;">expected</span>. 
+:::
+
+
+# Why Do We Care {#wecare .centeredslide}
 
 :::: {.columns}
 
@@ -99,9 +103,13 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
  - Reproducibility is one of the most important aspets of research
  - Key tenant of the Randles Lab, you will be involved in multiple projects
+ 
+::: {.fragment .fade-in-then-out-out}
 
 ::: {.callout-warning title="Warning!"}
 - Your focus will be diverted on a day-to-day basis. Good to make notes for both yourself and fellow lab members
+:::
+
 :::
 
 - Collaboration is a key aspect of our research. Courteous to keep good notes so others can easily replicate your work
@@ -119,11 +127,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
 ::::
 
-::: footer
-[{{< fa brands github >}} `saforem2/lattice23`](https://github.com/saforem2/lattice23)
-:::
-
-# Documentation {.centeredslide}
+# Documentation {#documentation .centeredslide}
 
 - Wiki (Confluence)
 
@@ -131,7 +135,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
 - Outlook
 
-# Wiki (Confluence) {.centeredslide}
+# Wiki (Confluence) {#wiki .centeredslide}
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -146,14 +150,19 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 
 ::: {.column width="49%"}
+::: {.fragment .fade-in-then-out-out}
+
 ![](https://i.gyazo.com/66b9f922cf03aa041292ca4012058ac0.pngg){width=90%}
+:::
+::: {.fragment .fade-in-then-out-out}
 
 ![](https://i.gyazo.com/48c5538a154172f98d505c8877f67df5.png){width=90%}
+:::
 :::
 
 ::::
 
-# Wiki: Sample Entry {.centeredslide}
+## Wiki: Sample Entry {.centeredslide}
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -168,6 +177,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 
 ::: {.column width="49%" style="font-size:0.59em;"}
+::: {.fragment .fade-in-then-out-out}
 
 ::: {.callout title="Algorithm"}
 
@@ -198,16 +208,38 @@ You are not expected to be experts by the end of this, but familiarty with each 
     - Explain your workflow
 :::
 
+:::
 
 :::
 
 ::::
 
-# Wiki: Example Entry {.centeredslide}
+## Wiki: Example Entry {.centeredslide}
+::: {.fragment .fade-in-then-out-out}
+![](https://i.gyazo.com/4315a92dce655ed54b035eedf5dc1909.png)
+:::
+## Wiki: Individual Meeting Sign-Up {.centeredslide}
+::: {.fragment .fade-in-then-out-out}
+![](https://i.gyazo.com/aa354f6cbe0674f3380a29270af9cd33.png)
+:::
 
-![](https://i.gyazo.com/4315a92dce655ed54b035eedf5dc1909.png){height=150%}
+## Wiki: Group Meeting Schedule {.centeredslide}
 
-# Box {.centeredslide}
+::: {.fragment .fade-in-then-out-out}
+![](https://i.gyazo.com/95a2c75fde6d2d5066f45fd9c9001c09.png)
+:::
+
+## Wiki: Lattice Boltzmann Questions
+
+Since not all of us have an extensive fluid background, these questions help catch everyone up 
+
+Questions are split into two parts, one part done you first semester and the other done your second semester
+
+::: {.fragment .fade-in-then-out-out}
+![](https://i.gyazo.com/d5e7fa20ba84dd45127001cae59da41a.png)
+:::
+
+# Box {#box .centeredslide}
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -219,9 +251,12 @@ You are not expected to be experts by the end of this, but familiarty with each 
     - Milestone documents
  - Unlimited lab storage but Duke also gives individuals their own allocation of storage
 
+::: {.fragment .fade-in-then-out-out}
 ::: {.callout-warning title="Warning!"}
 - DO NOT UPLOAD UNNECESSARY FILES
 :::
+:::
+
 :::
 
 ::: {.column width="49%"}
@@ -232,7 +267,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
 ::::
 
-# Outlook {.centeredslide}
+# Outlook {#outlook .centeredslide}
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -244,10 +279,12 @@ You are not expected to be experts by the end of this, but familiarty with each 
     - Time Off
 
 
-
+::: {.fragment .fade-in-then-out-out}
 ::: {.callout-important title="Warning" style="text-align:left;"}
 **Professor Randles lives by her calendar. If it's not on her calendar, it's not happening**:
 :::
+:::
+
 :::
 
 ::: {.column width="49%"}
@@ -255,15 +292,20 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 ::::
 
-# Outlook Overview {.centeredslide}
+## Outlook Overview 
+
+::: {.fragment .fade-in-then-out-out}
 
 ![](https://i.gyazo.com/cadbca20725120ffc1d68cb6b99d30b2.png){width=75%}
 
-# Outlook Day-to-Day {.centeredslide}
+:::
+## Outlook Day-to-Day 
+::: {.fragment .fade-in-then-out-out}
 
 ![](https://i.gyazo.com/cbc94a3f77ad59c3389870a39233c23a.png){width=75%}
 
-# Monday.com {.centeredslide}
+:::
+# Monday.com {#monday .centeredslide}
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -271,32 +313,36 @@ You are not expected to be experts by the end of this, but familiarty with each 
  - Monday.com Ltd. is a cloud-based platform that allows users to create their own applications and project management software. 
  - It is used to schedule/assign tasks, track project progress, etc. 
 
+::: {.fragment .fade-in-then-out-out}
 ::: {.callout-warning title="Warning!"}
-- DO NOT UPLOAD UNNECESSARY FILES
-- DO NOT UPLOAD PATIENT DATA
+- **DO NOT UPLOAD UNNECESSARY FILES**
+- **DO NOT UPLOAD PATIENT DATA**
 :::
+:::
+
 :::
 
 ::: {.column width="49%"}
 ![](https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png){width=75%}
 
 :::
+
 ::::
 
-# Monday.com: My Work Page {.centeredslide}
+## Monday.com: My Work Page 
 
 ![](https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png){width=75%}
 
-# Monday.com: Project Page {.centeredslide}
+## Monday.com: Project Page 
 
 ![](https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png){width=75%}
 
-# Monday.com: Research Subgroup Page {.centeredslide}
+## Monday.com: Research Subgroup Page
 
 ![](https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png){width=75%}
 
 
-# Overleaf {.centeredslide}
+# Overleaf {#overleaf .centeredslide}
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -304,9 +350,12 @@ You are not expected to be experts by the end of this, but familiarty with each 
 - Overleaf "is a collaborative cloud-based LaTeX editor used for writing, editing and publishing scientific documents".
 - All papers, outlines, milestone documents, and some of our documentation is written with Overleaf. Easily shareable and great for bookkeeping
 
+::: {.fragment .fade-in-then-out-out}
 ::: {.callout-tip title="Learning Overleaf!"}
 - Learning LaTeX while your research expectations are lower is a good idea, trust me
 :::
+:::
+
 :::
 
 ::: {.column width="49%"}
@@ -317,7 +366,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 ::::
 
-# Overleaf: LaTeX {.centeredslide}
+## Overleaf: LaTeX {.centeredslide}
 :::: {.columns}
 
 - LATEX is a tool for typesetting professional-looking documents
@@ -326,31 +375,32 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
 ::::
 
-# Overleaf: Writing your first piece of LATEX {.centeredslide}
+## Overleaf: Writing your first piece of LATEX
 
 - Creating a document and writing some text 
   -
-```
+```{.latex filename="Document Creation" code-line-numbers="|1|2|3,4|5"}
 \documentclass{article}
 \begin{document}
 First document. This is a simple example, with no 
 extra parameters or packages included.
 \end{document}
 ```
+
   - Will produce the following image 
-    - ![](https://images.ctfassets.net/nrgyaltdicpt/5oBbZABsWEnHZpwhfvV2PD/95ba7d5496616b4f10dffe6fb90f578a/LL30Fig1-plain.svg){width=75%}
+    - ![](https://i.gyazo.com/9b604fe70b5c218c6bc68df64525ed1a.png){width=75%}
   
 - Not always this easy. Some journals/conferences require specific formats 
 
 
-# Overleaf: Document Pre-amble {.centeredslide}
+## Overleaf: Document Pre-amble
 :::: {.columns}
 
 ::: {.column width="48%"}
 - Everything in your .tex file appearing before \begin document is called the preamble, which acts as the document’s “setup” section.
 
-::: {.callout-tip title="Document Settings"}
-```
+::: {.fragment .fade-in-then-out-out}
+```{.latex filename="Document Settings"}
 \documentclass[12pt, letterpaper]{article}
 \usepackage{graphicx}
 
@@ -367,25 +417,28 @@ extra parameters or packages included.
 
 - Overleaf is compatible with a bunch of different libraries, packages that you can use to your advantage. To do so, you'd want to include something like the following: 
 
-::: {.callout-tip title="Package Import"}
-```
+::: {.fragment .fade-in-then-out-out}
+
+
+```{.latex filename="Package Import"}
 \usepackage{graphicx}
 
 ```
-::: 
+:::
+
 - For more info on what packages are available and their functionality, you can visit the following [page](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Finding_and_using_LaTeX_packages) 
 
 
 ::: 
 ::::
 
-# Overleaf: Including title, author and date information {.centeredslide}
+## Overleaf: Including title, author and date information 
 :::: {.columns}
 
 - Adding a title, author and date to our document requires three more lines in the preamble (not the main body of the document). Those lines are:
 
-::: {.callout-tip title="Author/Date Information"}
-```
+::: {.fragment .fade-in-then-out-out}
+```latex
 \title{My first LaTeX document}: 
 \author{Hubert Farnsworth}: 
 
@@ -393,60 +446,71 @@ extra parameters or packages included.
 
 \date{August 2022}: 
 ```
-::: 
+:::
 
 ::::
 
-# Overleaf: Adding comments {.centeredslide}
+## Overleaf: Adding comments 
 :::: {.columns}
 
+::: {.fragment .fade-in-then-out-out}
 To make a comment in LATEX, simply write a % symbol at the beginning of the line, as shown in the following code which uses the example above:
+:::
 
-::: {.callout-tip title="Example Comment Line"}
-```
+::: {.fragment .fade-in-then-out-out}
+```{.latex filename="Example Comment Line"}
 % This line here is a comment. It will not be typeset in the document.
 
 ```
 :::
-
 ::::
 
-# Overleaf: Bold, italics and underlining {.centeredslide}
+## Overleaf: Bold, italics and underlining 
 :::: {.columns}
 
-- **Bold** : bold text in LaTeX is typeset using the \textbf{...} command.
-- *Italics* : italicised text is produced using the \textit{...} command.
-- <ins>Underline</ins>: to underline text use the \underline{...} command.
+::: {.fragment .fade-in-then-out-out}
+**Bold** : bold text in LaTeX is typeset using the \textbf{...} command.
+:::
 
-::: {.callout-tip title="Example Usage Line"}  
-```
+::: {.fragment .fade-in-then-out-out}
+
+```{.latex filename="Example of Bolding"}
 Some of the \textbf{greatest}
-discoveries in \underline{science} 
-were made by \textbf{\textit{accident}}.
 ```
 :::
 
+::: {.fragment .fade-in-then-out-out}
+Underline: to underline text use the \underline{...} command.
+:::
+
+::: {.fragment .fade-in-then-out-out}
+```{.latex filename="Example of Underlining"}
+discoveries in \underline{science} 
+```
+:::
+
+::: {.fragment .fade-in-then-out-out}
+*Italics* : italicised text is produced using the \textit{...} command.
+:::
+
+::: {.fragment .fade-in-then-out-out}
+```{.latex filename="Example of Italicizing"}
+were made by \textbf{\textit{accident}}.
+```
+:::
 ::::
 
-# Overleaf: Adding Images {.centeredslide}
+## Overleaf: Adding Images
 :::: {.columns}
 
 Overleaf supports three ways to insert images:
 
-::: {.column width="49%"}
-
-
-- Use the Insert Figure button(![](https:​/​/​sharelatex-wiki-cdn-671420.c.cdn77.org/​learn-scripts/​images/​a/​a8/​InsertFigureButton.png){width=75%}), located on the editor toolbar, to insert an image into Visual Editor or Code Editor.
+- Use the Insert Figure button, located on the editor toolbar, to insert an image into Visual Editor or Code Editor.
 - Copy and paste an image into Visual Editor or Code Editor.
 - Use Code Editor to write LaTeX code that inserts a graphic.
-​
-:::
 
-::: {.column width="49%"}
-
-::: {.callout-tip title="Example of Image Inclusion"}  
-
-```
+::: {.fragment .fade-in-then-out-out}
+```{.latex code-line-numbers="|2,3|9-12|14"}
 \documentclass{article}
 \usepackage{graphicx} %LaTeX package to import graphics
 \graphicspath{{images/}} %configuring the graphicx package
@@ -460,16 +524,18 @@ on a large scale, everywhere we look.
 % graphicx package
 \includegraphics{universe}  
  
-There's a picture of a galaxy above.
+There's a picture of a galaxy above (trust me yall).
 \end{document}
 ```
 :::
-:::
 ::::
 
-# Overleaf: Captions, labels, references {.centeredslide}
+
+## Overleaf: Captions, labels, references {.centeredslide}
 :::: {.columns}
-```
+
+::: {.fragment .fade-in-then-out-out}
+```{.latex code-line-numbers="|7,11|8|9|10|11|14"}
 \documentclass{article}
 \usepackage{graphicx}
 \graphicspath{{images/}}
@@ -487,13 +553,38 @@ As you can see in figure \ref{fig:mesh1}, the function grows near the origin. Th
 
 \end{document}
 ```
+:::
 ::::
-# Overleaf: Link Sharing {.centeredslide}
+## Overleaf: Link Sharing {.centeredslide}
 
 <iframe data-src="https://images.contentful.com/nrgyaltdicpt/20neyIS8962IgXcQH6beDo/2dd30bbb1ca0325a55fecb93666aa98d/ProjectSharing.gif" width="90%" height="500" title="l2hmc-qcd"></iframe>
 
-# Overleaf: More to Learn {.centeredslide}
+## Overleaf: More to Learn {.centeredslide}
 :::: {.columns}
+
+::: {.column width="48%"}
+
+**There's so much more I can cover, but I won't** 
+
+- Creating lists
+- Adding math
+- Basic document structure
+- Creating tables
+- Community formats
+- LaTeX packages
+
+:::
+
+::: {.column width="48%"}
+Useful Resources include: 
+
+- Overleaf's Website
+
+- Dr Trefor Bazett's Overleaf Series 
+  - {{< video https://www.youtube.com/watch?v=-HvRvBjBAvg width="300" height="300" >}}
+
+- Everyone in the lab (they should know these things)
+:::
 
 ::::
 
@@ -515,8 +606,14 @@ As you can see in figure \ref{fig:mesh1}, the function grows near the origin. Th
 :::
 ::::
 
-# Whiteside's Outline: Overview {.centeredslide}
+## Whiteside's Outline: Overview {.centeredslide}
 :::: {.columns}
-- I'm not teaching you this, you gotta look through the documentation in the Randles Lab Documentation thingy
+
+::: {style="font-size: 150%;"}
+
+I'm not teaching you this, you gotta look through the documentation in the Randles Lab Document
+
+:::
+
 ::::
 

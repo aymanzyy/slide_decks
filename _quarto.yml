@@ -4,7 +4,7 @@ project:
   preview:
     port: 4204
 
-title: "Ayman's Test Presentation"
+title: "Ayman's Workshop Series"
 date: today
 date-modified: last-modified
 author-title: ""
@@ -20,7 +20,7 @@ author:
   name: Ayman Yousef
   url: https://aymanzyy.github.io
   orcid: 0000-0002-9981-0876
-  email: foremans@anl.gov
+  email: ayman.yousef@duke.edu
   affiliation: Duke University
   affiliation-url: https://randleslab.pratt.duke.edu/members/ayman-yousef
 citation:

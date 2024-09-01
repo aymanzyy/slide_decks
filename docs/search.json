@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "index.html#wiki-sample-entry",
+    "href": "index.html#wiki-sample-entry",
+    "title": "Ayman’s Workshop Series",
+    "section": "Wiki: Sample Entry",
+    "text": "Wiki: Sample Entry\n\n\n\nDate:\n\nCan be days when work was performed or when journal entry is recorded\n\nSummary:\n\nInclude context for what work you’re performing.\nCan be conversational, some of the best notebooks work through the thinking process that led to a specific run, solution, etc.\n\n\n\n\n\n\n\n\nAlgorithm\n\n\n\nDate:\nGoal:\n\nIntended purpose of run, should match surrounding Wiki entry\n\nInput File:\n\nIdeally, link the actual file\nIf you’re lazy, data path\n\nPath to data output:\nCode Version - git checkout:\n\nLink to branch\nWrite commit hash\n\nJob Submission Parameters:\n\nNumber of processors\nRelevant job parameters\n\nPartition\nNode numbers\nFlags\n\n\nOutcome/Post Processing:\n\nLink scripts\nExplain your workflow"
+  },
+  {
+    "objectID": "index.html#wiki-example-entry",
+    "href": "index.html#wiki-example-entry",
+    "title": "Ayman’s Workshop Series",
+    "section": "Wiki: Example Entry",
+    "text": "Wiki: Example Entry"
+  },
+  {
+    "objectID": "index.html#wiki-individual-meeting-sign-up",
+    "href": "index.html#wiki-individual-meeting-sign-up",
+    "title": "Ayman’s Workshop Series",
+    "section": "Wiki: Individual Meeting Sign-Up",
+    "text": "Wiki: Individual Meeting Sign-Up"
+  },
+  {
+    "objectID": "index.html#wiki-group-meeting-schedule",
+    "href": "index.html#wiki-group-meeting-schedule",
+    "title": "Ayman’s Workshop Series",
+    "section": "Wiki: Group Meeting Schedule",
+    "text": "Wiki: Group Meeting Schedule"
+  },
+  {
+    "objectID": "index.html#wiki-lattice-boltzmann-questions",
+    "href": "index.html#wiki-lattice-boltzmann-questions",
+    "title": "Ayman’s Workshop Series",
+    "section": "Wiki: Lattice Boltzmann Questions",
+    "text": "Wiki: Lattice Boltzmann Questions\nSince not all of us have an extensive fluid background, these questions help catch everyone up\nQuestions are split into two parts, one part done you first semester and the other done your second semester"
+  },
+  {
+    "objectID": "index.html#outlook-overview",
+    "href": "index.html#outlook-overview",
+    "title": "Ayman’s Workshop Series",
+    "section": "Outlook Overview",
+    "text": "Outlook Overview"
+  },
+  {
+    "objectID": "index.html#outlook-day-to-day",
+    "href": "index.html#outlook-day-to-day",
+    "title": "Ayman’s Workshop Series",
+    "section": "Outlook Day-to-Day",
+    "text": "Outlook Day-to-Day"
+  },
+  {
+    "objectID": "index.html#monday.com-my-work-page",
+    "href": "index.html#monday.com-my-work-page",
+    "title": "Ayman’s Workshop Series",
+    "section": "Monday.com: My Work Page",
+    "text": "Monday.com: My Work Page"
+  },
+  {
+    "objectID": "index.html#monday.com-project-page",
+    "href": "index.html#monday.com-project-page",
+    "title": "Ayman’s Workshop Series",
+    "section": "Monday.com: Project Page",
+    "text": "Monday.com: Project Page"
+  },
+  {
+    "objectID": "index.html#monday.com-research-subgroup-page",
+    "href": "index.html#monday.com-research-subgroup-page",
+    "title": "Ayman’s Workshop Series",
+    "section": "Monday.com: Research Subgroup Page",
+    "text": "Monday.com: Research Subgroup Page"
+  },
+  {
+    "objectID": "index.html#overleaf-latex",
+    "href": "index.html#overleaf-latex",
+    "title": "Ayman’s Workshop Series",
+    "section": "Overleaf: LaTeX",
+    "text": "Overleaf: LaTeX\n\n\nLATEX is a tool for typesetting professional-looking documents\nLaTeX works very differently: instead of a interactive page to type and edit text with, your document is a plain text file interspersed with LaTeX commands used to express the desired (typeset) results.\nTo produce a visible, typeset document, your LaTeX file is processed by a piece of software called a TeX engine which uses the commands embedded in your text file to guide and control the typesetting process, converting the LaTeX commands and document text into a professionally typeset PDF file"
+  },
+  {
+    "objectID": "index.html#overleaf-writing-your-first-piece-of-latex",
+    "href": "index.html#overleaf-writing-your-first-piece-of-latex",
+    "title": "Ayman’s Workshop Series",
+    "section": "Overleaf: Writing your first piece of LATEX",
+    "text": "Overleaf: Writing your first piece of LATEX\n\nCreating a document and writing some text\n\n\nDocument Creation\n\n\\documentclass{article}\n\\begin{document}\nFirst document. This is a simple example, with no \nextra parameters or packages included.\n\\end{document}\n\n\nWill produce the following image\n\n\n\n\nNot always this easy. Some journals/conferences require specific formats"
+  },
+  {
+    "objectID": "index.html#overleaf-document-pre-amble",
+    "href": "index.html#overleaf-document-pre-amble",
+    "title": "Ayman’s Workshop Series",
+    "section": "Overleaf: Document Pre-amble",
+    "text": "Overleaf: Document Pre-amble\n\n\n\nEverything in your .tex file appearing before \\begin document is called the preamble, which acts as the document’s “setup” section.\n\n\n\n\nDocument Settings\n\n\\documentclass[12pt, letterpaper]{article}\n\\usepackage{graphicx}\n\n\n\nIn this example, we are setting both:\n\nThe font size to 12 pt\nThe paper size to letterpaper\n\n\n\n\nOverleaf is compatible with a bunch of different libraries, packages that you can use to your advantage. To do so, you’d want to include something like the following:\n\n\n\n\nPackage Import\n\n\\usepackage{graphicx}\n\n\n\nFor more info on what packages are available and their functionality, you can visit the following page"
+  },
+  {
+    "objectID": "index.html#overleaf-including-title-author-and-date-information",
+    "href": "index.html#overleaf-including-title-author-and-date-information",
+    "title": "Ayman’s Workshop Series",
+    "section": "Overleaf: Including title, author and date information",
+    "text": "Overleaf: Including title, author and date information\n\n\nAdding a title, author and date to our document requires three more lines in the preamble (not the main body of the document). Those lines are:\n\n\\title{My first LaTeX document}: \n\\author{Hubert Farnsworth}: \n\n\\thanks{Funded by the Overleaf team.}: \n\n\\date{August 2022}:"
+  },
+  {
+    "objectID": "index.html#overleaf-adding-comments",
+    "href": "index.html#overleaf-adding-comments",
+    "title": "Ayman’s Workshop Series",
+    "section": "Overleaf: Adding comments",
+    "text": "Overleaf: Adding comments\n\n\nTo make a comment in LATEX, simply write a % symbol at the beginning of the line, as shown in the following code which uses the example above:\n\n\n\nExample Comment Line\n\n% This line here is a comment. It will not be typeset in the document."
+  },
+  {
+    "objectID": "index.html#overleaf-bold-italics-and-underlining",
+    "href": "index.html#overleaf-bold-italics-and-underlining",
+    "title": "Ayman’s Workshop Series",
+    "section": "Overleaf: Bold, italics and underlining",
+    "text": "Overleaf: Bold, italics and underlining\n\n\nBold : bold text in LaTeX is typeset using the command.\n\n\n\nExample of Bolding\n\nSome of the \\textbf{greatest}\n\n\nUnderline: to underline text use the command.\n\n\n\nExample of Underlining\n\ndiscoveries in \\underline{science} \n\n\nItalics : italicised text is produced using the command.\n\n\n\nExample of Italicizing\n\nwere made by \\textbf{\\textit{accident}}."
+  },
+  {
+    "objectID": "index.html#overleaf-adding-images",
+    "href": "index.html#overleaf-adding-images",
+    "title": "Ayman’s Workshop Series",
+    "section": "Overleaf: Adding Images",
+    "text": "Overleaf: Adding Images\n\nOverleaf supports three ways to insert images:\nUse the Insert Figure button, located on the editor toolbar, to insert an image into Visual Editor or Code Editor.\nCopy and paste an image into Visual Editor or Code Editor.\nUse Code Editor to write LaTeX code that inserts a graphic.\n\n\\documentclass{article}\n\\usepackage{graphicx} %LaTeX package to import graphics\n\\graphicspath{{images/}} %configuring the graphicx package\n \n\\begin{document}\nThe universe is immense and it seems to be homogeneous, \non a large scale, everywhere we look.\n\n% The \\includegraphcs command is \n% provided (implemented) by the \n% graphicx package\n\\includegraphics{universe}  \n \nThere's a picture of a galaxy above (trust me yall).\n\\end{document}"
+  },
+  {
+    "objectID": "index.html#overleaf-captions-labels-references",
+    "href": "index.html#overleaf-captions-labels-references",
+    "title": "Ayman’s Workshop Series",
+    "section": "Overleaf: Captions, labels, references",
+    "text": "Overleaf: Captions, labels, references\n\n\n\\documentclass{article}\n\\usepackage{graphicx}\n\\graphicspath{{images/}}\n \n\\begin{document}\n\n\\begin{figure}[h]\n    \\centering\n    \\includegraphics[width=0.75\\textwidth]{mesh}\n    \\caption{A nice plot.}\n    \\label{fig:mesh1}\n\\end{figure}\n \nAs you can see in figure \\ref{fig:mesh1}, the function grows near the origin. This example is on page \\pageref{fig:mesh1}.\n\n\\end{document}"
+  },
+  {
+    "objectID": "index.html#overleaf-link-sharing",
+    "href": "index.html#overleaf-link-sharing",
+    "title": "Ayman’s Workshop Series",
+    "section": "Overleaf: Link Sharing",
+    "text": "Overleaf: Link Sharing"
+  },
+  {
+    "objectID": "index.html#overleaf-more-to-learn",
+    "href": "index.html#overleaf-more-to-learn",
+    "title": "Ayman’s Workshop Series",
+    "section": "Overleaf: More to Learn",
+    "text": "Overleaf: More to Learn\n\n\nThere’s so much more I can cover, but I won’t\n\nCreating lists\nAdding math\nBasic document structure\nCreating tables\nCommunity formats\nLaTeX packages\n\n\nUseful Resources include:\n\nOverleaf’s Website\nDr Trefor Bazett’s Overleaf Series\n\n\n\nEveryone in the lab (they should know these things)"
+  },
+  {
+    "objectID": "index.html#whitesides-outline-overview",
+    "href": "index.html#whitesides-outline-overview",
+    "title": "Ayman’s Workshop Series",
+    "section": "Whiteside’s Outline: Overview",
+    "text": "Whiteside’s Outline: Overview\n\n\nI’m not teaching you this, you gotta look through the documentation in the Randles Lab Document"
+  }
+]
