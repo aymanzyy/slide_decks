@@ -4,7 +4,7 @@
     "href": "index.html#wiki-sample-entry",
     "title": "Ayman’s Workshop Series",
     "section": "Wiki: Sample Entry",
-    "text": "Wiki: Sample Entry\n\n\n\nDate:\n\nCan be days when work was performed or when journal entry is recorded\n\nSummary:\n\nInclude context for what work you’re performing.\nCan be conversational, some of the best notebooks work through the thinking process that led to a specific run, solution, etc.\n\n\n\n\n\n\n\n\nAlgorithm\n\n\n\nDate:\nGoal:\n\nIntended purpose of run, should match surrounding Wiki entry\n\nInput File:\n\nIdeally, link the actual file\nIf you’re lazy, data path\n\nPath to data output:\nCode Version - git checkout:\n\nLink to branch\nWrite commit hash\n\nJob Submission Parameters:\n\nNumber of processors\nRelevant job parameters\n\nPartition\nNode numbers\nFlags\n\n\nOutcome/Post Processing:\n\nLink scripts\nExplain your workflow"
+    "text": "Wiki: Sample Entry\n\n\n\nDate:\n\nCan be days when work was performed or when journal entry is recorded\n\nSummary:\n\nInclude context for what work you’re performing.\nCan be conversational, some of the best notebooks work through the thinking process that led to a specific run, solution, etc.\n\n\n\n\n\n\n\n\nAlgorithm\n\n\n\nDate:\nGoal:\nInput File:\nPath to data output:\nCode Version - git checkout:\n\nLink to branch\nWrite commit hash\n\nJob Submission Parameters:\n\nNumber of processors\nRelevant job parameters\n\nPartition\nNode numbers\nFlags\n\n\nOutcome/Post Processing:\n\nLink scripts\nExplain your workflow"
   },
   {
     "objectID": "index.html#wiki-example-entry",

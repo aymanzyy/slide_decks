@@ -184,11 +184,8 @@ You are not expected to be experts by the end of this, but familiarty with each 
 1. `Date`: 
 
 2. `Goal`: 
-    - Intended purpose of run, should match surrounding Wiki entry
 
 3. `Input File`:
-    - Ideally, link the actual file
-    - If you're lazy, data path
 
 4. `Path to data output`: 
 
@@ -596,6 +593,7 @@ Useful Resources include:
 
 - Based on a paper by Harvard Professor/American chemist George Whiteside
 - Idea behind his work on papers was that "it is most efficient to write papers from outlines"
+- You can find the template [here](https://duke.app.box.com/file/92773425392) 
 
 :::
 
