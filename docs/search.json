@@ -49,6 +49,13 @@
     "text": "Outlook Day-to-Day"
   },
   {
+    "objectID": "index.html#monday.com-organizational-structure",
+    "href": "index.html#monday.com-organizational-structure",
+    "title": "Ayman’s Workshop Series",
+    "section": "Monday.com: Organizational Structure",
+    "text": "Monday.com: Organizational Structure\n\n\n\nMy Work\n\nView all tasks assigned to yourself across all boards\nCustomize people, dates, and status columns and choose which boards to view\n\nMeetings\n\nGroup Meetings\nProject meetings\n\nProjects\n\nIn each project group folder, there is a dashboard that collects info from all projects and a separate board for each project\n\n\n\n\nResources\n\nInstructions/Tutorials for using Monday\nContacts\nProject List\n\nMiscellaneous Work\n\nMonday (requests and Monday maintenance)\nMiscellaneous Task Board\nJournals"
+  },
+  {
     "objectID": "index.html#monday.com-my-work-page",
     "href": "index.html#monday.com-my-work-page",
     "title": "Ayman’s Workshop Series",
@@ -68,6 +75,20 @@
     "title": "Ayman’s Workshop Series",
     "section": "Monday.com: Research Subgroup Page",
     "text": "Monday.com: Research Subgroup Page"
+  },
+  {
+    "objectID": "index.html#monday.com-board-organization-views",
+    "href": "index.html#monday.com-board-organization-views",
+    "title": "Ayman’s Workshop Series",
+    "section": "Monday.com: Board Organization [Views]",
+    "text": "Monday.com: Board Organization [Views]\n\n\n\nProject\n\nThis should be the default view for all projects\n\nIncludes all critical columns\n\nMain Table\n\nIn general is not used\nIncludes every column that can be used, including back-end triggers (used to trigger automations) which users should not edit\n\n\n\n\nPapers\n\nincludes columns that are only relevant to papers (Other authors, paper stage, link to whitesides, Conference submitting to, etc.)\n\nInstructions\n\nView that you should see when the board is initialized\nContains instructions for properly setting up the project\nTasks must be completed in a timely fashion"
+  },
+  {
+    "objectID": "index.html#monday.com-board-organization-columns",
+    "href": "index.html#monday.com-board-organization-columns",
+    "title": "Ayman’s Workshop Series",
+    "section": "Monday.com: Board Organization [Columns]",
+    "text": "Monday.com: Board Organization [Columns]\n\n\n\nPerson\n\nIndividual(s) who are assigned to the task\nUsed by My Work to identify tasks\n\nStatus\n\nIndicates if the task is done, stuck, working on it, etc.\nDone vs Done and Discussed\n\nDependent On\n\nMost complicated column so far, it can be used to set a difference in deadlines between two or more tasks.\nEspecially useful for tasks that cannot be started until a previous task is completed, or for changing several deadline at once\nUsed for all paper templates to set deadlines based on submission date\n\n\n\n\nDue Date\n\nDue date\nUsed to organize tasks by date in My Work\n\nLink\n\nany useful links\nUsed in the “Wiki Link” group to connect the project’s notebook\n\nProject Leader\n\nShould be set as a default value for the board\nThis can be filtered for in My Work if leaders want to see all tasks that they are supervising\n\nProject Meeting\n\nShould be set as a default value for the board\n\nNotifications\n\nReceive a notification 1 week, 3 days, or 1 day before a task is due"
   },
   {
     "objectID": "index.html#overleaf-latex",

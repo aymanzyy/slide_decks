@@ -325,19 +325,114 @@ Questions are split into two parts, one part done you first semester and the oth
 :::
 
 ::::
+## Monday.com: Organizational Structure
+:::: {.columns}
+::: {.column width="50%"}
+- **My Work** 
+  - View all tasks assigned to yourself across all boards
+  - Customize people, dates, and status columns and choose which boards to view
+
+- **Meetings**
+  - Group Meetings
+  - Project meetings
+
+- **Projects**
+  - In each project group folder, there is a dashboard that collects info from all projects and a separate board for each project
+
+:::
+
+::: {.column width="48%"}
+- **Resources**
+  - Instructions/Tutorials for using Monday
+  - Contacts
+  - Project List
+
+- **Miscellaneous Work**
+  - Monday (requests and Monday maintenance)
+  - Miscellaneous Task Board
+  - Journals
+
+:::
+
+::::
 
 ## Monday.com: My Work Page 
 
-![](https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png){width=75%}
+![](https://i.gyazo.com/5c9160cabb7ca36325d980f058ed1c08.pngg){width=75%}
 
 ## Monday.com: Project Page 
 
-![](https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png){width=75%}
+![](https://i.gyazo.com/9d73bb314254e474d7faf9868478df64.png){width=75%}
 
 ## Monday.com: Research Subgroup Page
 
-![](https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png){width=75%}
+![](https://i.gyazo.com/70884729c5230109d0e2e0e1140ea879.png){width=75%}
 
+
+## Monday.com: Board Organization [Views]
+:::: {.columns}
+::: {.column width="50%"}
+- **Project**
+  - This should be the default view for all projects  
+  - Includes all critical columns
+  
+- **Main Table**
+  - In general is not used
+  - Includes every column that can be used, including back-end triggers (used to trigger automations) which users should not edit
+
+:::
+
+::: {.column width="48%"}
+- **Papers**
+  - includes columns that are only relevant to papers (Other authors, paper stage, link to whitesides, Conference submitting to, etc.)
+
+- **Instructions**
+  - View that you should see when the board is initialized
+  - Contains instructions for properly setting up the project
+  - Tasks must be completed in a timely fashion
+
+
+:::
+::::
+
+## Monday.com: Board Organization [Columns]
+:::: {.columns}
+::: {.column width="50%"}
+- **Person** 
+  - Individual(s) who are assigned to the task
+  - Used by My Work to identify tasks 
+
+- **Status** 
+  - Indicates if the task is done, stuck, working on it, etc. 
+  - Done vs Done and Discussed
+
+- **Dependent On** 
+  - Most complicated column so far, it can be used to set a difference in deadlines between two or more tasks. 
+  - Especially useful for tasks that cannot be started until a previous task is completed, or for changing several deadline at once
+  - Used for all paper templates to set deadlines based on submission date
+:::
+::: {.column width="48%"}
+- **Due Date**
+  - Due date
+  - Used to organize tasks by date in My Work
+
+- **Link**
+  - any useful links
+  - Used in the “Wiki Link” group to connect the project’s notebook
+
+- **Project Leader**
+  - Should be set as a default value for the board
+  - This can be filtered for in My Work if leaders want to see all tasks that they are supervising
+
+- **Project Meeting**
+  - Should be set as a default value for the board
+
+- **Notifications**
+  - Receive a notification 1 week, 3 days, or 1 day before a task is due
+:::
+
+
+::::
 
 # Overleaf {#overleaf .centeredslide}
 :::: {.columns}
