@@ -407,22 +407,20 @@ Questions are split into two parts, one part done you first semester and the oth
   - Done vs Done and Discussed
 
 - **Dependent On** 
-  - Most complicated column so far, it can be used to set a difference in deadlines between two or more tasks. 
-  - Especially useful for tasks that cannot be started until a previous task is completed, or for changing several deadline at once
+  - Used to set a difference in deadlines between two or more tasks. 
+  - Useful for tasks that cannot be started until a previous task is completed
   - Used for all paper templates to set deadlines based on submission date
 :::
 ::: {.column width="48%"}
 - **Due Date**
-  - Due date
   - Used to organize tasks by date in My Work
 
 - **Link**
-  - any useful links
-  - Used in the “Wiki Link” group to connect the project’s notebook
+  - Any useful links, used in the “Wiki Link” group to connect the project’s notebook
 
 - **Project Leader**
   - Should be set as a default value for the board
-  - This can be filtered for in My Work if leaders want to see all tasks that they are supervising
+  - Can be filtered for in My Work to see all tasks that they are supervising
 
 - **Project Meeting**
   - Should be set as a default value for the board
