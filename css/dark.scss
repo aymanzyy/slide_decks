@@ -2,7 +2,7 @@
 /*-- scss:defaults --*/
 
 // colors
-$dim-text:   #777777;
+$dim-text:   #313639;
 $dim-color:  #404040;
 $mygrey-000: #1c1c1c;
 $mygrey-010: #222222;
@@ -33,10 +33,10 @@ $orange-text: #FD971F;
 $pink-text: #F06292;
 
 $body-bg: #1c1c1c;
-$dim-text: #666666;
-$body-color: #bdbdbd;
+$dim-text: #313639;
+$body-color: #313639; // Text Color
 
-$link-color: #42affa;
+$link-color: #339898;
 $italic-color: #89DDFF;
 $strong-color: #FFFFFF;
 
@@ -56,7 +56,7 @@ $presentation-font-family-line-height: 1.0em !default;
 $presentation-line-height: 1.0em !default;
 
 // headings
-$heading-color: #efefef;
+$heading-color: #012169; //Header Colors
 $presentation-h1-font-size: 1.5em !default;
 $presentation-h2-font-size: 1.33em !default;
 $presentation-h3-font-size: 1.25em !default;
@@ -74,7 +74,7 @@ $presentation-heading-letter-spacing: normal !default;
 $presentation-heading-font: IBM Plex Sans Condensed, Open Sans, Playfair Display, Helvetica, sans-serif, $font-family-sans-serif !default;
 
 // links
-$link-color: #42affa !default;
+$link-color: #339898 !default; //Link color? 
 $link-color-hover: $mypink !default;
 $dark-bg-link-color: #42affa !default;
 

@@ -5,8 +5,8 @@
 :root {
     --strong-color: #FF5252;
     --italic-color: #AE81FF;
-    --dim-text:   #666666;
-    --dim-color:  #404040;
+    --dim-text:   #313639;
+    --dim-color:  #313639;
     --mygrey-000: #1c1c1c;
     --mygrey-010: #222222;
     --mygrey-020: #282828;
@@ -26,7 +26,7 @@
     --myblue:   #00CCFF;
     --mypurple: #AE81FF;
     --mypink:   #FF67FF;
-    --r-background-color: #1c1c1c;
+    --r-background-color: #FCF7E5;
     /* --r-main-font-size: 30px; */
     /* --r-block-margin: 12px; */
     /* --r-heading-margin: 0 0 12px 0; */
@@ -79,8 +79,8 @@
     --quarto-hl-vs-color: #da4453;
     --quarto-hl-wa-color: #da4453;
     --quarto-body-bg: #1c1c1c;
-    --quarto-body-color: #bdbdbd;
-    --quarto-text-muted: white;
+    --quarto-body-color: #313639;
+    --quarto-text-muted: #313639;
     --quarto-border-color: #1c1c1c;
     --quarto-border-width: 1px;
     --quarto-border-radius: 4px;

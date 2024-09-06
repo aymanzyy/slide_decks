@@ -143,7 +143,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
  - Website that houses most of our documentation
  - Project updates are written here, with everyone in the lab having access to every page
 
-- Structure:
+- **<span style="color:#7678ed;">Structure</span>**:
   - Each project has a "landing page" and a "notebook"
   - Notebooks contain information regarding the ongoing project it's for
 
@@ -167,9 +167,9 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
 ::: {.column width="50%"}
 
- - Date: 
+ - <span style="color:#b8f2e6;">**Date** </span>: 
     - Can be days when work was performed or when journal entry is recorded
-- Summary: 
+- <span style="color:#5e6472;">**Summary** </span>:
   - Include context for what work you're performing. 
   - Can be conversational, some of the best notebooks work through 
   the thinking process that led to a specific run, solution, etc. 
@@ -228,9 +228,9 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
 ## Wiki: Lattice Boltzmann Questions
 
-Since not all of us have an extensive fluid background, these questions help catch everyone up 
+- Since not all of us have an extensive fluid background, these questions help catch everyone up 
 
-Questions are split into two parts, one part done you first semester and the other done your second semester
+- Questions are split into two parts, one part done you first semester and the other done your second semester
 
 ::: {.fragment .fade-in-then-out-out}
 ![](https://i.gyazo.com/d5e7fa20ba84dd45127001cae59da41a.png)
@@ -257,9 +257,9 @@ Questions are split into two parts, one part done you first semester and the oth
 :::
 
 ::: {.column width="49%"}
+::: {.fragment .fade-in-then-out-out}
 ![](https://upload.wikimedia.org/wikipedia/commons/5/57/Box%2C_Inc._logo.svg){width=75%}
-![](https://i.gyazo.com/22547996db9d716c894e64cc8dcbe815.png){height=150%}
-
+:::
 :::
 
 ::::
@@ -328,26 +328,26 @@ Questions are split into two parts, one part done you first semester and the oth
 ## Monday.com: Organizational Structure
 :::: {.columns}
 ::: {.column width="50%"}
-- **My Work** 
+- <span style="color:#ff8281;">**My Work** </span>:
   - View all tasks assigned to yourself across all boards
   - Customize people, dates, and status columns and choose which boards to view
 
-- **Meetings**
+- <span style="color:#b8b8ff;">**Meetings** </span>
   - Group Meetings
   - Project meetings
 
-- **Projects**
+- <span style="color:#219ebc;"> **Projects** </span>
   - In each project group folder, there is a dashboard that collects info from all projects and a separate board for each project
 
 :::
 
 ::: {.column width="48%"}
-- **Resources**
+- <span style="color:#ffebf0;">**Resources** </span>
   - Instructions/Tutorials for using Monday
   - Contacts
   - Project List
 
-- **Miscellaneous Work**
+- <span style="color:#a8fdda;">**Miscellaneous Work** </span>
   - Monday (requests and Monday maintenance)
   - Miscellaneous Task Board
   - Journals
@@ -372,21 +372,21 @@ Questions are split into two parts, one part done you first semester and the oth
 ## Monday.com: Board Organization [Views]
 :::: {.columns}
 ::: {.column width="50%"}
-- **Project**
+- <span style="color:#ff8281;">**Project** </span>
   - This should be the default view for all projects  
   - Includes all critical columns
   
-- **Main Table**
+- <span style="color:#b8b8ff;">**Main Table** </span>
   - In general is not used
   - Includes every column that can be used, including back-end triggers (used to trigger automations) which users should not edit
 
 :::
 
 ::: {.column width="48%"}
-- **Papers**
+- <span style="color:#219ebc;">**Papers** </span>
   - includes columns that are only relevant to papers (Other authors, paper stage, link to whitesides, Conference submitting to, etc.)
 
-- **Instructions**
+- <span style="color:#a8fdda;">**Instructions** </span>
   - View that you should see when the board is initialized
   - Contains instructions for properly setting up the project
   - Tasks must be completed in a timely fashion
@@ -397,35 +397,35 @@ Questions are split into two parts, one part done you first semester and the oth
 
 ## Monday.com: Board Organization [Columns]
 :::: {.columns}
-::: {.column width="50%"}
-- **Person** 
-  - Individual(s) who are assigned to the task
-  - Used by My Work to identify tasks 
+::: {.column width="48%"}
+-  <span style="color:#ff8281;">**Person** </span>
+    - Individual(s) who are assigned to the task
+    - Used by My Work to identify tasks 
 
-- **Status** 
+- <span style="color:#b8b8ff;">**Status** </span>
   - Indicates if the task is done, stuck, working on it, etc. 
   - Done vs Done and Discussed
 
-- **Dependent On** 
+- <span style="color:#219ebc;">**Dependent On** </span> 
   - Used to set a difference in deadlines between two or more tasks. 
   - Useful for tasks that cannot be started until a previous task is completed
   - Used for all paper templates to set deadlines based on submission date
 :::
 ::: {.column width="48%"}
-- **Due Date**
+- <span style="color:#b392ac;">**Due Date** </span>
   - Used to organize tasks by date in My Work
 
-- **Link**
+- <span style="color:#f4f4f9;">**Link** </span>
   - Any useful links, used in the “Wiki Link” group to connect the project’s notebook
 
-- **Project Leader**
+- <span style="color:#b8dbd9;">**Project Leader** </span>
   - Should be set as a default value for the board
   - Can be filtered for in My Work to see all tasks that they are supervising
 
-- **Project Meeting**
+- <span style="color:#ffcf01;">**Project Meeting** </span> 
   - Should be set as a default value for the board
 
-- **Notifications**
+- <span style="color:#0466c8;">**Notifications** </span> 
   - Receive a notification 1 week, 3 days, or 1 day before a task is due
 :::
 
@@ -498,8 +498,8 @@ extra parameters or packages included.
 :::
 
 - In this example, we are setting both:
-  - The font size to 12 pt
-  - The paper size to letterpaper
+  - The <span style="color:#ff8281;">font size</span> to 12 pt
+  - The <span style="color:#219ebc;">paper size</span> to letterpaper
 
 ::: 
 ::: {.column width="49%"}
@@ -544,7 +544,7 @@ extra parameters or packages included.
 :::: {.columns}
 
 ::: {.fragment .fade-in-then-out-out}
-To make a comment in LATEX, simply write a % symbol at the beginning of the line, as shown in the following code which uses the example above:
+To make a comment in LATEX, simply write a <span style="color:#f2392c;">%</span> symbol at the beginning of the line, as shown in the following code which uses the example above:
 :::
 
 ::: {.fragment .fade-in-then-out-out}
@@ -559,7 +559,7 @@ To make a comment in LATEX, simply write a % symbol at the beginning of the line
 :::: {.columns}
 
 ::: {.fragment .fade-in-then-out-out}
-**Bold** : bold text in LaTeX is typeset using the \textbf{...} command.
+**Bold**: bold text in LaTeX is typeset using the \textbf{...} command.
 :::
 
 ::: {.fragment .fade-in-then-out-out}
@@ -570,7 +570,7 @@ Some of the \textbf{greatest}
 :::
 
 ::: {.fragment .fade-in-then-out-out}
-Underline: to underline text use the \underline{...} command.
+ <u>Underlined</u>: to underline text use the \underline{...} command.
 :::
 
 ::: {.fragment .fade-in-then-out-out}
@@ -580,7 +580,7 @@ discoveries in \underline{science}
 :::
 
 ::: {.fragment .fade-in-then-out-out}
-*Italics* : italicised text is produced using the \textit{...} command.
+*Italics*: italicised text is produced using the \textit{...} command.
 :::
 
 ::: {.fragment .fade-in-then-out-out}
@@ -595,7 +595,7 @@ were made by \textbf{\textit{accident}}.
 
 Overleaf supports three ways to insert images:
 
-- Use the Insert Figure button, located on the editor toolbar, to insert an image into Visual Editor or Code Editor.
+- Use the **Insert Figure** button, located on the editor toolbar, to insert an image into Visual Editor or Code Editor.
 - Copy and paste an image into Visual Editor or Code Editor.
 - Use Code Editor to write LaTeX code that inserts a graphic.
 

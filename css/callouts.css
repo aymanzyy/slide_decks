@@ -1,7 +1,7 @@
 :root {
-  --callout-color: #2a2a2a;
-  --callout-title-color: #bdbdbd;
-  --callout-border-hover: #838383;
+  --callout-color: #E2E6ED;
+  --callout-title-color: #FCF7E5;
+  --callout-border-hover: #E2E6ED;
     /*#FF2052;*/ 
     /*#A9E34C;*/
 }
@@ -12,7 +12,8 @@
   border-radius: 8px!important;
   /* padding-left: 2pt; */
   /* padding-right: 2pt; */
-  background-color: #1c1c1c;
+  background-color: #262626; /* Cast Iron */
+  color: #DAD0C6; /* Define text color for callout */
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   /* max-width: min-content + 20px; */
   /* min-width: max-content; */
