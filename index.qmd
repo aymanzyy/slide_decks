@@ -46,13 +46,16 @@ format:
 :::
 
 ::: footer
-[2024-09-04 @ [Randles Lab Workshop Series](https://randleslab.pratt.duke.edu)]{.dim-text style="text-align:left;'}
+[2025-09-05 @ [Randles Lab Workshop Series](https://randleslab.pratt.duke.edu)]{.dim-text style="text-align:left;'}
 :::
 
 # Overview
 
 1. [Background](#background)
     - [Why Do We Care](#wecare)
+2. [Lab Policies](#labpolicies)
+    - [Meetings](#meetings)
+    - [Documents](#docs)
 2. [Documentation](#documentation)
     - [Wiki](#wiki)
     - [Box](#box)
@@ -125,6 +128,43 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
 :::
 
+::::
+
+# Lab Policies {#labpolicies .centeredslide}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- <span style="color:#b8f2e6;">**Code**: Reminder that HARVEY is proprietary. It should live only on Randles Lab provided and approved laptops or approved systems like those at DOE. Do not put snippets into any LLM or AI software, share video, etc. Please discuss with PI before distribution or sharing of any code. Note that all lab-developed code and analysis scripts are considered proprietary and may not be shared externally without PIapproval.
+
+:::
+
+::: {.column width="49%"}
+
+- <span style="color:#b8f2e6;">**Lab Tasks**: Just like wet labs share tasks like cleaning or buffer prep, our dry lab relies on everyone pitching in on share maintenance duties that keep our computational setup strong and productive.
+
+:::
+::::
+
+# Meetings {#meetings .centeredslide}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- <span style="color:#b8f2e6;">**Project meetings**: : deep dive into project updates and technicaldetails, bi-weekly. These meetings are the main research updates.You should be attended 1-2 depending on your stage.
+
+- <span style="color:#b8f2e6;">**Individual meetings**: : high-level planning, career discussions,course plans, IDP, deep planning for research project trajectory,extended discussions that need follow up from project meeting (this will typically be called out in project meeting), for the last two all relevant parties should sign up. Meeting agendas should be in yourBox folder 24 hours before the meeting
+
+:::
+
+::: {.column width="49%"}
+
+- <span style="color:#b8f2e6;">** Group meeting**:: time to share announcements, give quick update on weekly goals (note: this is not a technical update), opportunity for an extended deep dive on one project.
+- <span style="color:#b8f2e6;">** Scrums**:: : project management meeting, should be a quick non-technical meeting, each person should share their monday ‘My Work’section, state their goal for the week, and go over the plan to achieve it. Discuss if the goal is in line with overall project timeline/plan and targeted tasks are reasonable.
+
+:::
 ::::
 
 # Documentation {#documentation .centeredslide}
@@ -291,14 +331,14 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 ::::
 
-## Outlook Overview 
+## Outlook, Meetings Overview 
 
 ::: {.fragment .fade-in-then-out-out}
 
 ![](https://i.gyazo.com/cadbca20725120ffc1d68cb6b99d30b2.png){width=75%}
 
 :::
-## Outlook Day-to-Day 
+## Outlook Time-Off Overview 
 ::: {.fragment .fade-in-then-out-out}
 
 ![](https://i.gyazo.com/cbc94a3f77ad59c3389870a39233c23a.png){width=65%}
