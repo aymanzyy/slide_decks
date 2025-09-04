@@ -167,6 +167,36 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 ::::
 
+# Documents {#meetings .centeredslide}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- <span style="color:#b8f2e6;">**Project meetings**: : deep dive into project updates and technicaldetails, bi-weekly. These meetings are the main research updates.You should be attended 1-2 depending on your stage.
+
+- <span style="color:#b8f2e6;">**Individual meetings**: : high-level planning, career discussions,course plans, IDP, deep planning for research project trajectory,extended discussions that need follow up from project meeting (this will typically be called out in project meeting), for the last two all relevant parties should sign up. Meeting agendas should be in yourBox folder 24 hours before the meeting
+
+:::
+
+::: {.column width="49%"}
+
+- <span style="color:#b8f2e6;">** Group meeting**:: time to share announcements, give quick update on weekly goals (note: this is not a technical update), opportunity for an extended deep dive on one project.
+- <span style="color:#b8f2e6;">** Scrums**:: : project management meeting, should be a quick non-technical meeting, each person should share their monday ‘My Work’section, state their goal for the week, and go over the plan to achieve it. Discuss if the goal is in line with overall project timeline/plan and targeted tasks are reasonable.
+
+:::
+::::
+
+
+## Documents, Publications {.centeredslide}
+
+![](assets/gitlablogo.png){width=90%}
+
+
+## Documents, Mentoring/Expectations {.centeredslide}
+
+## Documents, Agenda Setup {.centeredslide}
+
 # Documentation {#documentation .centeredslide}
 
 - Wiki (Confluence)
