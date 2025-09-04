@@ -98,7 +98,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 
 
-# Why Do We Care {#wecare .centeredslide}
+# Why Are We So Structured {#wecare .centeredslide}
 
 :::: {.columns}
 
@@ -136,13 +136,22 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
 ::: {.column width="50%"}
 
-- <span style="color:#b8f2e6;">**Code**: Reminder that HARVEY is proprietary. It should live only on Randles Lab provided and approved laptops or approved systems like those at DOE. Do not put snippets into any LLM or AI software, share video, etc. Please discuss with PI before distribution or sharing of any code. Note that all lab-developed code and analysis scripts are considered proprietary and may not be shared externally without PIapproval.
-
+- <span style="color:#3f3244;">**Code**</span>: 
+    - HARVEY is proprietary. It should live only on Randles Lab provided and approved laptops or approved systems like those at DOE. 
+    - Do not put snippets into any LLM or AI software, share video, etc. Please discuss with PI before distribution or sharing of any code. 
+    - All lab-developed code and analysis scripts are considered proprietary and may not be shared externally without PI approval.
 :::
 
 ::: {.column width="49%"}
 
-- <span style="color:#b8f2e6;">**Lab Tasks**: Just like wet labs share tasks like cleaning or buffer prep, our dry lab relies on everyone pitching in on share maintenance duties that keep our computational setup strong and productive.
+- <span style="color:#2f2235;">**Lab Tasks**</span>: Just like wet labs share tasks like cleaning or buffer prep, our dry lab relies on everyone pitching in on share maintenance duties that keep our computational setup strong and productive.
+
+
+::: {.fragment .fade-in-then-out-out}
+::: {.callout-warning title="Warning!"}
+- Do the lab tasks, as these are an easy way to build rep with your fellow labmates and Prof. Randles
+:::
+:::
 
 :::
 ::::
@@ -153,49 +162,38 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
 ::: {.column width="50%"}
 
-- <span style="color:#b8f2e6;">**Project meetings**: : deep dive into project updates and technicaldetails, bi-weekly. These meetings are the main research updates.You should be attended 1-2 depending on your stage.
+- <span style="color:#3f3244;">**Project meetings**</span>: deep dive into project updates and technicaldetails, bi-weekly. These meetings are the main research updates.You should be attended 1-2 depending on your stage.
 
-- <span style="color:#b8f2e6;">**Individual meetings**: : high-level planning, career discussions,course plans, IDP, deep planning for research project trajectory,extended discussions that need follow up from project meeting (this will typically be called out in project meeting), for the last two all relevant parties should sign up. Meeting agendas should be in yourBox folder 24 hours before the meeting
+- <span style="color:#2f2235;">**Individual meetings**</span>: high-level planning, career discussions,course plans, IDP, deep planning for research project trajectory,extended discussions that need follow up from project meeting (this will typically be called out in project meeting), for the last two all relevant parties should sign up. Meeting agendas should be in yourBox folder 24 hours before the meeting
 
 :::
 
 ::: {.column width="49%"}
 
-- <span style="color:#b8f2e6;">** Group meeting**:: time to share announcements, give quick update on weekly goals (note: this is not a technical update), opportunity for an extended deep dive on one project.
-- <span style="color:#b8f2e6;">** Scrums**:: : project management meeting, should be a quick non-technical meeting, each person should share their monday ‘My Work’section, state their goal for the week, and go over the plan to achieve it. Discuss if the goal is in line with overall project timeline/plan and targeted tasks are reasonable.
+- <span style="color:#3f3244;">**Group meeting**</span>: time to share announcements, give quick update on weekly goals (note: this is not a technical update), opportunity for an extended deep dive on one project.
+- <span style="color:#2f2235;"> **Scrums**</span>: project management meeting, should be a quick non-technical meeting, each person should share their monday ‘My Work’section, state their goal for the week, and go over the plan to achieve it. Discuss if the goal is in line with overall project timeline/plan and targeted tasks are reasonable.
 
 :::
 ::::
 
 # Documents {#docs .centeredslide}
 
-:::: {.columns}
+Professor Randles just laid out updated SOPs, good to read in depth 
 
-::: {.column width="50%"}
-
-- <span style="color:#b8f2e6;">**Project meetings**: : deep dive into project updates and technicaldetails, bi-weekly. These meetings are the main research updates.You should be attended 1-2 depending on your stage.
-
-- <span style="color:#b8f2e6;">**Individual meetings**: : high-level planning, career discussions,course plans, IDP, deep planning for research project trajectory,extended discussions that need follow up from project meeting (this will typically be called out in project meeting), for the last two all relevant parties should sign up. Meeting agendas should be in yourBox folder 24 hours before the meeting
-
-:::
-
-::: {.column width="49%"}
-
-- <span style="color:#b8f2e6;">** Group meeting**:: time to share announcements, give quick update on weekly goals (note: this is not a technical update), opportunity for an extended deep dive on one project.
-- <span style="color:#b8f2e6;">** Scrums**:: : project management meeting, should be a quick non-technical meeting, each person should share their monday ‘My Work’section, state their goal for the week, and go over the plan to achieve it. Discuss if the goal is in line with overall project timeline/plan and targeted tasks are reasonable.
-
-:::
-::::
-
+![](assets/path_to_sops.png){width=90%}
 
 ## Documents, Publications {.centeredslide}
 
-![](assets/gitlablogo.png){width=90%}
+![](assets/lab_sop_publications.png){width=90%}
 
 
 ## Documents, Mentoring/Expectations {.centeredslide}
 
+![](assets/lab_sop_expectations.png){width=90%}
+
 ## Documents, Agenda Setup {.centeredslide}
+
+![](assets/lab_sop_agenda_guide.png){width=90%}
 
 # Documentation {#documentation .centeredslide}
 

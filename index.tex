@@ -1,0 +1,1146 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Ayman's Workshop Series},
+  pdfauthor={Ayman Yousef},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Ayman's Workshop Series}
+\author{Ayman Yousef}
+\date{2024-09-13}
+
+\begin{document}
+\maketitle
+
+
+\section{}\label{section}
+
+{Workshop 1: Introduction to the Randles Lab}\\
+{Getting started with our different tools}\\
+{~}\\
+\href{https://aymanzyy.github.io}{\faIcon{home}} {Ayman Yousef }
+
+{2024-09-04 @ \href{https://randleslab.pratt.duke.edu}{Randles Lab
+Workshop Series}}
+
+\section{Overview}\label{overview}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \hyperref[background]{Background}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \hyperref[wecare]{Why Do We Care}
+  \end{itemize}
+\item
+  \hyperref[documentation]{Documentation}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \hyperref[wiki]{Wiki}
+  \item
+    \hyperref[box]{Box}
+  \item
+    \hyperref[outlook]{Outlook}
+  \end{itemize}
+\item
+  \hyperref[monday]{Monday.com}
+\item
+  \hyperref[overleaf]{Overleaf}
+\item
+  \hyperref[whitesides]{Whiteside's}
+\end{enumerate}
+
+\section{Background}\label{background}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, bottomrule=.15mm, toptitle=1mm, opacitybacktitle=0.6, colback=white, opacityback=0, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, toprule=.15mm, coltitle=black, left=2mm, arc=.35mm, bottomtitle=1mm, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Goal}, breakable, leftrule=.75mm]
+
+Get you guys caught up on the different resources available in the lab.
+
+\end{tcolorbox}
+
+\begin{itemize}
+\item
+  It's \textbf{important} to note that the expectation is to keep up
+  with each of these resources.
+\item
+  {Ex}: Monday pages are checked at random and during project meetings
+\end{itemize}
+
+\includegraphics[width=0.3\textwidth,height=\textheight]{index_files/mediabag/confluence-logo-D9B0.png}
+\includegraphics[width=0.5\textwidth,height=\textheight]{index_files/mediabag/Logo-1-NO-1.png}
+
+You are not expected to be experts by the end of this, but familiarty
+with each of these is {expected}.
+
+\section{Why Do We Care}\label{wecare}
+
+\begin{itemize}
+\tightlist
+\item
+  Reproducibility is one of the most important aspets of research
+\item
+  Key tenant of the Randles Lab, you will be involved in multiple
+  projects
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, bottomrule=.15mm, toptitle=1mm, opacitybacktitle=0.6, colback=white, opacityback=0, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, toprule=.15mm, coltitle=black, left=2mm, arc=.35mm, bottomtitle=1mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning!}, breakable, leftrule=.75mm]
+
+\begin{itemize}
+\tightlist
+\item
+  Your focus will be diverted on a day-to-day basis. Good to make notes
+  for both yourself and fellow lab members
+\end{itemize}
+
+\end{tcolorbox}
+
+\begin{itemize}
+\tightlist
+\item
+  Collaboration is a key aspect of our research. Courteous to keep good
+  notes so others can easily replicate your work
+
+  \begin{itemize}
+  \tightlist
+  \item
+    {Ex}: Getting hit by a bus
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  Learning these tools are important in sustaining a collaborative lab
+  environment.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If we're all comfortable with the same tools, it becomes easier pass
+    of tasks, share work, etc.
+  \end{itemize}
+\end{itemize}
+
+\section{Documentation}\label{documentation}
+
+\begin{itemize}
+\item
+  Wiki (Confluence)
+\item
+  Box
+\item
+  Outlook
+\end{itemize}
+
+\section{Wiki (Confluence)}\label{wiki}
+
+\begin{itemize}
+\item
+  Website that houses most of our documentation
+\item
+  Project updates are written here, with everyone in the lab having
+  access to every page
+\item
+  \textbf{{Structure}}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Each project has a ``landing page'' and a ``notebook''
+  \item
+    Notebooks contain information regarding the ongoing project it's for
+  \end{itemize}
+\end{itemize}
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{index_files/mediabag/66b9f922cf03aa041292.png}
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{index_files/mediabag/48c5538a154172f98d50.png}
+
+\subsection{Wiki: Sample Entry}\label{wiki-sample-entry}
+
+\begin{itemize}
+\tightlist
+\item
+  {\textbf{Date} }:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Can be days when work was performed or when journal entry is
+    recorded
+  \end{itemize}
+\item
+  {\textbf{Summary} }:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Include context for what work you're performing.
+  \item
+    Can be conversational, some of the best notebooks work through the
+    thinking process that led to a specific run, solution, etc.
+  \end{itemize}
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-color-frame, bottomrule=.15mm, toprule=.15mm, left=2mm, arc=.35mm, colback=white, rightrule=.15mm, opacityback=0, breakable, leftrule=.75mm]
+
+\vspace{-3mm}\textbf{Algorithm}\vspace{3mm}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \texttt{Date}:
+\item
+  \texttt{Goal}:
+\item
+  \texttt{Input\ File}:
+\item
+  \texttt{Path\ to\ data\ output}:
+\item
+  \texttt{Code\ Version\ -\ git\ checkout}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Link to branch
+  \item
+    Write commit hash
+  \end{itemize}
+\item
+  \texttt{Job\ Submission\ Parameters}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Number of processors
+  \item
+    Relevant job parameters
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Partition
+    \item
+      Node numbers
+    \item
+      Flags
+    \end{itemize}
+  \end{itemize}
+\item
+  \texttt{Outcome/Post\ Processing}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Link scripts
+  \item
+    Explain your workflow
+  \end{itemize}
+\end{enumerate}
+
+\end{tcolorbox}
+
+\subsection{Wiki: Example Entry}\label{wiki-example-entry}
+
+\includegraphics{index_files/mediabag/4315a92dce655ed54b03.png}
+
+\subsection{Wiki: Individual Meeting
+Sign-Up}\label{wiki-individual-meeting-sign-up}
+
+\includegraphics[width=0.6\textwidth,height=\textheight]{index_files/mediabag/aa354f6cbe0674f3380a.png}
+
+\subsection{Wiki: Group Meeting
+Schedule}\label{wiki-group-meeting-schedule}
+
+\includegraphics{index_files/mediabag/95a2c75fde6d2d5066f4.png}
+
+\subsection{Wiki: Lattice Boltzmann
+Questions}\label{wiki-lattice-boltzmann-questions}
+
+\begin{itemize}
+\item
+  Since not all of us have an extensive fluid background, these
+  questions help catch everyone up
+\item
+  Questions are split into two parts, one part done you first semester
+  and the other done your second semester
+\end{itemize}
+
+\includegraphics{index_files/mediabag/d5e7fa20ba84dd451270.png}
+
+\section{Box}\label{box}
+
+\begin{itemize}
+\tightlist
+\item
+  Website that houses the rest of our documentation
+\item
+  Files to be shared with the lab, Professor Randles are housed here
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Group Presentations
+  \item
+    Individual meeting files
+  \item
+    Milestone documents
+  \end{itemize}
+\item
+  Unlimited lab storage but Duke also gives individuals their own
+  allocation of storage
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, bottomrule=.15mm, toptitle=1mm, opacitybacktitle=0.6, colback=white, opacityback=0, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, toprule=.15mm, coltitle=black, left=2mm, arc=.35mm, bottomtitle=1mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning!}, breakable, leftrule=.75mm]
+
+\begin{itemize}
+\tightlist
+\item
+  DO NOT UPLOAD UNNECESSARY FILES
+\end{itemize}
+
+\end{tcolorbox}
+
+\section{Outlook}\label{outlook}
+
+\begin{itemize}
+\tightlist
+\item
+  We use Outlook calendar to organize our lab schedule. This includes:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Meetings
+  \item
+    Lab Activities
+  \item
+    Milestone Events
+  \item
+    Time Off
+  \end{itemize}
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-important-color-frame, bottomrule=.15mm, toptitle=1mm, opacitybacktitle=0.6, colback=white, opacityback=0, colbacktitle=quarto-callout-important-color!10!white, titlerule=0mm, toprule=.15mm, coltitle=black, left=2mm, arc=.35mm, bottomtitle=1mm, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Warning}, breakable, leftrule=.75mm]
+
+\textbf{Professor Randles lives by her calendar. If it's not on her
+calendar, it's not happening}:
+
+\end{tcolorbox}
+
+\includegraphics[width=0.75\textwidth,height=\textheight]{index_files/mediabag/Microsoft_Office_Out.png}
+
+\subsection{Outlook Overview}\label{outlook-overview}
+
+\includegraphics[width=0.75\textwidth,height=\textheight]{index_files/mediabag/cadbca20725120ffc1d6.png}
+
+\subsection{Outlook Day-to-Day}\label{outlook-day-to-day}
+
+\includegraphics[width=0.65\textwidth,height=\textheight]{index_files/mediabag/cbc94a3f77ad59c33898.png}
+
+\section{Monday.com}\label{monday}
+
+\begin{itemize}
+\tightlist
+\item
+  Monday.com Ltd.~is a cloud-based platform that allows users to create
+  their own applications and project management software.
+\item
+  It is used to schedule/assign tasks, track project progress, etc.
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, bottomrule=.15mm, toptitle=1mm, opacitybacktitle=0.6, colback=white, opacityback=0, colbacktitle=quarto-callout-warning-color!10!white, titlerule=0mm, toprule=.15mm, coltitle=black, left=2mm, arc=.35mm, bottomtitle=1mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning!}, breakable, leftrule=.75mm]
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{DO NOT UPLOAD UNNECESSARY FILES}
+\item
+  \textbf{DO NOT UPLOAD PATIENT DATA}
+\end{itemize}
+
+\end{tcolorbox}
+
+\includegraphics[width=0.75\textwidth,height=\textheight]{index_files/mediabag/In-depth-review-–-.png}
+
+\subsection{Monday.com: Organizational
+Structure}\label{monday.com-organizational-structure}
+
+\begin{itemize}
+\tightlist
+\item
+  {\textbf{My Work} }:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    View all tasks assigned to yourself across all boards
+  \item
+    Customize people, dates, and status columns and choose which boards
+    to view
+  \end{itemize}
+\item
+  {\textbf{Meetings} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Group Meetings
+  \item
+    Project meetings
+  \end{itemize}
+\item
+  { \textbf{Projects} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    In each project group folder, there is a dashboard that collects
+    info from all projects and a separate board for each project
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  {\textbf{Resources} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Instructions/Tutorials for using Monday
+  \item
+    Contacts
+  \item
+    Project List
+  \end{itemize}
+\item
+  {\textbf{Miscellaneous Work} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Monday (requests and Monday maintenance)
+  \item
+    Miscellaneous Task Board
+  \item
+    Journals
+  \end{itemize}
+\end{itemize}
+
+\subsection{Monday.com: My Work Page}\label{monday.com-my-work-page}
+
+\includegraphics[width=0.75\textwidth,height=\textheight]{index_files/mediabag/5c9160cabb7ca36325d9.png}
+
+\subsection{Monday.com: Project Page}\label{monday.com-project-page}
+
+\includegraphics[width=0.75\textwidth,height=\textheight]{index_files/mediabag/9d73bb314254e474d7fa.png}
+
+\subsection{Monday.com: Research Subgroup
+Page}\label{monday.com-research-subgroup-page}
+
+\includegraphics[width=0.75\textwidth,height=\textheight]{index_files/mediabag/70884729c5230109d0e2.png}
+
+\subsection{Monday.com: Board Organization
+{[}Views{]}}\label{monday.com-board-organization-views}
+
+\begin{itemize}
+\tightlist
+\item
+  {\textbf{Project} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This should be the default view for all projects\\
+  \item
+    Includes all critical columns
+  \end{itemize}
+\item
+  {\textbf{Main Table} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    In general is not used
+  \item
+    Includes every column that can be used, including back-end triggers
+    (used to trigger automations) which users should not edit
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  {\textbf{Papers} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    includes columns that are only relevant to papers (Other authors,
+    paper stage, link to whitesides, Conference submitting to, etc.)
+  \end{itemize}
+\item
+  {\textbf{Instructions} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    View that you should see when the board is initialized
+  \item
+    Contains instructions for properly setting up the project
+  \item
+    Tasks must be completed in a timely fashion
+  \end{itemize}
+\end{itemize}
+
+\subsection{Monday.com: Board Organization
+{[}Columns{]}}\label{monday.com-board-organization-columns}
+
+\begin{itemize}
+\tightlist
+\item
+  {\textbf{Person} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Individual(s) who are assigned to the task
+  \item
+    Used by My Work to identify tasks
+  \end{itemize}
+\item
+  {\textbf{Status} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Indicates if the task is done, stuck, working on it, etc.
+  \item
+    Done vs Done and Discussed
+  \end{itemize}
+\item
+  {\textbf{Dependent On} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Used to set a difference in deadlines between two or more tasks.
+  \item
+    Used for all paper templates to set deadlines based on submission
+    date
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  {\textbf{Due Date} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Used to organize tasks by date in My Work
+  \end{itemize}
+\item
+  {\textbf{Link} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Any useful links, used in the ``Wiki Link'' group to connect the
+    project's notebook
+  \end{itemize}
+\item
+  {\textbf{Project Leader} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Should be set as a default value for the board
+  \item
+    Can be filtered for in My Work to see all tasks that they are
+    supervising
+  \end{itemize}
+\item
+  {\textbf{Notifications} }
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Receive a notification 1 week, 3 days, or 1 day before a task is due
+  \end{itemize}
+\end{itemize}
+
+\section{Overleaf}\label{overleaf}
+
+\begin{itemize}
+\tightlist
+\item
+  Overleaf ``is a collaborative cloud-based LaTeX editor used for
+  writing, editing and publishing scientific documents''.
+\item
+  All papers, outlines, milestone documents, and some of our
+  documentation is written with Overleaf. Easily shareable and great for
+  bookkeeping
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, bottomrule=.15mm, toptitle=1mm, opacitybacktitle=0.6, colback=white, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, titlerule=0mm, toprule=.15mm, coltitle=black, left=2mm, arc=.35mm, bottomtitle=1mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Learning Overleaf!}, breakable, leftrule=.75mm]
+
+\begin{itemize}
+\tightlist
+\item
+  Learning LaTeX while your research expectations are lower is a good
+  idea, trust me
+\end{itemize}
+
+\end{tcolorbox}
+
+\subsection{Overleaf: LaTeX}\label{overleaf-latex}
+
+\begin{itemize}
+\tightlist
+\item
+  LATEX is a tool for typesetting professional-looking documents
+\item
+  LaTeX works very differently: instead of a interactive page to type
+  and edit text with, your document is a plain text file interspersed
+  with LaTeX commands used to express the desired (typeset) results.
+\item
+  To produce a visible, typeset document, your LaTeX file is processed
+  by a piece of software called a TeX engine which uses the commands
+  embedded in your text file to guide and control the typesetting
+  process, converting the LaTeX commands and document text into a
+  professionally typeset PDF file
+\end{itemize}
+
+\subsection{Overleaf: Writing your first piece of
+LATEX}\label{overleaf-writing-your-first-piece-of-latex}
+
+\begin{itemize}
+\item ~
+  \subsection{Creating a document and writing some
+  text}\label{creating-a-document-and-writing-some-text}
+
+  \begin{codelisting}
+
+  \caption{\texttt{Document Creation}}
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\}}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\NormalTok{First document. This is a simple example, with no }
+\NormalTok{extra parameters or packages included.}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+  \end{codelisting}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Will produce the following image
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \includegraphics[width=0.75\textwidth,height=\textheight]{index_files/mediabag/9b604fe70b5c218c6bc6.png}
+    \end{itemize}
+  \end{itemize}
+\item
+  Not always this easy. Some journals/conferences require specific
+  formats
+\end{itemize}
+
+\subsection{Overleaf: Document
+Pre-amble}\label{overleaf-document-pre-amble}
+
+\begin{itemize}
+\tightlist
+\item
+  Everything in your .tex file appearing before \textbackslash begin
+  document is called the preamble, which acts as the document's
+  ``setup'' section.
+\end{itemize}
+
+\begin{codelisting}
+
+\caption{\texttt{Document Settings}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{[12pt, letterpaper]\{}\ExtensionTok{article}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{graphicx}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\end{codelisting}
+
+\begin{itemize}
+\tightlist
+\item
+  In this example, we are setting both:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The {font size} to 12 pt
+  \item
+    The {paper size} to letterpaper
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  Overleaf is compatible with a bunch of different libraries, packages
+  that you can use to your advantage. To do so, you'd want to include
+  something like the following:
+\end{itemize}
+
+\begin{codelisting}
+
+\caption{\texttt{Package Import}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{graphicx}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\end{codelisting}
+
+\begin{itemize}
+\tightlist
+\item
+  For more info on what packages are available and their functionality,
+  you can visit the following
+  \href{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes\#Finding_and_using_LaTeX_packages}{page}
+\end{itemize}
+
+\subsection{Overleaf: Including title, author and date
+information}\label{overleaf-including-title-author-and-date-information}
+
+\begin{itemize}
+\tightlist
+\item
+  Adding a title, author and date to our document requires three more
+  lines in the preamble (not the main body of the document). Those lines
+  are:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textbackslash{}title}\NormalTok{\{My first LaTeX document\}: }
+\FunctionTok{\textbackslash{}author}\NormalTok{\{Hubert Farnsworth\}: }
+
+\FunctionTok{\textbackslash{}thanks}\NormalTok{\{Funded by the Overleaf team.\}: }
+
+\FunctionTok{\textbackslash{}date}\NormalTok{\{August 2022\}: }
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Overleaf: Adding comments}\label{overleaf-adding-comments}
+
+To make a comment in LATEX, simply write a {\%} symbol at the beginning
+of the line, as shown in the following code which uses the example
+above:
+
+\begin{codelisting}
+
+\caption{\texttt{Example Comment Line}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\% This line here is a comment. It will not be typeset in the document.}
+\end{Highlighting}
+\end{Shaded}
+
+\end{codelisting}
+
+\subsection{Overleaf: Bold, italics and
+underlining}\label{overleaf-bold-italics-and-underlining}
+
+\textbf{Bold}: bold text in LaTeX is typeset using the \textbf{...}
+command.
+
+\begin{codelisting}
+
+\caption{\texttt{Example of Bolding}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Some of the }\FunctionTok{\textbackslash{}textbf}\NormalTok{\{greatest\}}
+\end{Highlighting}
+\end{Shaded}
+
+\end{codelisting}
+
+Underlined: to underline text use the \underline{...} command.
+
+\begin{codelisting}
+
+\caption{\texttt{Example of Underlining}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{discoveries in }\FunctionTok{\textbackslash{}underline}\NormalTok{\{science\} }
+\end{Highlighting}
+\end{Shaded}
+
+\end{codelisting}
+
+\emph{Italics}: italicised text is produced using the \textit{...}
+command.
+
+\begin{codelisting}
+
+\caption{\texttt{Example of Italicizing}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{were made by }\FunctionTok{\textbackslash{}textbf}\NormalTok{\{}\FunctionTok{\textbackslash{}textit}\NormalTok{\{accident\}\}.}
+\end{Highlighting}
+\end{Shaded}
+
+\end{codelisting}
+
+\subsection{Overleaf: Adding Images}\label{overleaf-adding-images}
+
+Overleaf supports three ways to insert images:
+
+\begin{itemize}
+\tightlist
+\item
+  Use the \textbf{Insert Figure} button, located on the editor toolbar,
+  to insert an image into Visual Editor or Code Editor.
+\item
+  Copy and paste an image into Visual Editor or Code Editor.
+\item
+  Use Code Editor to write LaTeX code that inserts a graphic.
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{graphicx}\NormalTok{\} }\CommentTok{\%LaTeX package to import graphics}
+\FunctionTok{\textbackslash{}graphicspath}\NormalTok{\{\{images/\}\} }\CommentTok{\%configuring the graphicx package}
+ 
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\NormalTok{The universe is immense and it seems to be homogeneous, }
+\NormalTok{on a large scale, everywhere we look.}
+
+\CommentTok{\% The \textbackslash{}includegraphcs command is }
+\CommentTok{\% provided (implemented) by the }
+\CommentTok{\% graphicx package}
+\BuiltInTok{\textbackslash{}includegraphics}\NormalTok{\{}\ExtensionTok{universe}\NormalTok{\}  }
+ 
+\NormalTok{There\textquotesingle{}s a picture of a galaxy above (trust me yall).}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Overleaf: Captions, labels,
+references}\label{overleaf-captions-labels-references}
+
+\begin{Shaded}
+\begin{Highlighting}[numbers=left,,]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{graphicx}\NormalTok{\}}
+\FunctionTok{\textbackslash{}graphicspath}\NormalTok{\{\{images/\}\}}
+ 
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}[h]}
+    \FunctionTok{\textbackslash{}centering}
+    \BuiltInTok{\textbackslash{}includegraphics}\NormalTok{[width=0.75}\FunctionTok{\textbackslash{}textwidth}\NormalTok{]\{}\ExtensionTok{mesh}\NormalTok{\}}
+    \FunctionTok{\textbackslash{}caption}\NormalTok{\{A nice plot.\}}
+    \KeywordTok{\textbackslash{}label}\NormalTok{\{}\ExtensionTok{fig:mesh1}\NormalTok{\}}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}}
+ 
+\NormalTok{As you can see in figure }\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{fig:mesh1}\NormalTok{\}, the function grows near the origin. This example is on page }\KeywordTok{\textbackslash{}pageref}\NormalTok{\{}\ExtensionTok{fig:mesh1}\NormalTok{\}.}
+
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Overleaf: Link Sharing}\label{overleaf-link-sharing}
+
+\subsection{Overleaf: More to Learn}\label{overleaf-more-to-learn}
+
+\textbf{There's so much more I can cover, but I won't}
+
+\begin{itemize}
+\tightlist
+\item
+  Creating lists
+\item
+  Adding math
+\item
+  Basic document structure
+\item
+  Creating tables
+\item
+  Community formats
+\item
+  LaTeX packages
+\end{itemize}
+
+Useful Resources include:
+
+\begin{itemize}
+\item
+  Overleaf's Website
+\item
+  Dr Trefor Bazett's Overleaf Series
+
+  \begin{itemize}
+  \item
+    \url{https://www.youtube.com/watch?v=-HvRvBjBAvg}
+  \end{itemize}
+\item
+  Everyone in the lab (they should know these things)
+\end{itemize}
+
+\section{Whiteside's Outline}\label{whitesides-outline}
+
+\begin{itemize}
+\tightlist
+\item
+  Based on a paper by Harvard Professor/American chemist George
+  Whiteside
+\item
+  Idea behind his work on papers was that ``it is most efficient to
+  write papers from outlines''
+\item
+  You can find the template
+  \href{https://duke.app.box.com/file/92773425392}{here}
+\end{itemize}
+
+\includegraphics[width=0.75\textwidth,height=\textheight]{index_files/mediabag/800wm.pdf}
+
+\subsection{Whiteside's Outline:
+Overview}\label{whitesides-outline-overview}
+
+I'm not teaching you this, you gotta look through the documentation in
+the Randles Lab Document
+
+
+
+
+\end{document}
