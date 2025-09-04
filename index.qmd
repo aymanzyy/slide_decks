@@ -36,13 +36,13 @@ format:
     output-file: "README.md"
 ---
 
-# {.title-slide .centeredslide background-image="assets/randles_lab_group_photo_durham_bulls.png"}
+# {.title-slide .centeredslide background-image="assets/RL_Chapel_Photo.jpg"}
 
 ::: {style="background-color: rgba(22,22,22,0.75); border-radius: 10px; text-align:center; padding: 0px; padding-left: 1.5em; padding-right: 1.5em; max-width: min-content; min-width: max-content; margin-left: auto; margin-right: auto; padding-top: 0.2em; padding-bottom: 0.2em; line-height: 1.5em!important;"}
-<span style="color:#939393; font-size:1.5em; font-weight: bold;">Workshop 1: Introduction to the Randles Lab</span>  
-<span style="color:#777777; font-size:1.2em; font-weight: bold;">Getting started with our different tools</span>  
+<span style="color:#FCF7E5; font-size:1.5em; font-weight: bold;">Workshop 1: Introduction to the Randles Lab</span>  
+<span style="color:#E5E5E5; font-size:1.2em; font-weight: bold;">Getting started with our different tools</span>  
 [<br>&nbsp;]{style="padding-bottom: 0.5rem;"}  
-[{{< fa solid home >}}](https://aymanzyy.github.io) Ayman Yousef 
+[{{< fa solid home >}}](https://aymanzyy.github.io) <span style="color:#E5E5E5; font-size:1.2em; font-weight: bold;">Ayman Yousef </span> 
 :::
 
 ::: footer
@@ -217,7 +217,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 ## Wiki: Individual Meeting Sign-Up {.centeredslide}
 ::: {.fragment .fade-in-then-out-out}
-![](https://i.gyazo.com/aa354f6cbe0674f3380a29270af9cd33.png)
+![](https://i.gyazo.com/aa354f6cbe0674f3380a29270af9cd33.png){width=60%}
 :::
 
 ## Wiki: Group Meeting Schedule {.centeredslide}
@@ -257,9 +257,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 
 ::: {.column width="49%"}
-::: {.fragment .fade-in-then-out-out}
 ![](https://upload.wikimedia.org/wikipedia/commons/5/57/Box%2C_Inc._logo.svg){width=75%}
-:::
 :::
 
 ::::
@@ -274,6 +272,10 @@ You are not expected to be experts by the end of this, but familiarty with each 
     - Lab Activities
     - Milestone Events
     - Time Off
+- New this year is the two calendar system. Remember to update the "Time-Off" calendar 
+    - Classes
+    - Planned vacations
+    
 
 
 ::: {.fragment .fade-in-then-out-out}
@@ -299,7 +301,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 ## Outlook Day-to-Day 
 ::: {.fragment .fade-in-then-out-out}
 
-![](https://i.gyazo.com/cbc94a3f77ad59c3389870a39233c23a.png){width=75%}
+![](https://i.gyazo.com/cbc94a3f77ad59c3389870a39233c23a.png){width=65%}
 
 :::
 # Monday.com {#monday .centeredslide}
@@ -342,12 +344,12 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 
 ::: {.column width="48%"}
-- <span style="color:#ffebf0;">**Resources** </span>
+- <span style="color:#A1B70D;">**Resources** </span>
   - Instructions/Tutorials for using Monday
   - Contacts
   - Project List
 
-- <span style="color:#a8fdda;">**Miscellaneous Work** </span>
+- <span style="color:#005587;">**Miscellaneous Work** </span>
   - Monday (requests and Monday maintenance)
   - Miscellaneous Task Board
   - Journals
@@ -386,7 +388,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 - <span style="color:#219ebc;">**Papers** </span>
   - includes columns that are only relevant to papers (Other authors, paper stage, link to whitesides, Conference submitting to, etc.)
 
-- <span style="color:#a8fdda;">**Instructions** </span>
+- <span style="color:#C84E00;">**Instructions** </span>
   - View that you should see when the board is initialized
   - Contains instructions for properly setting up the project
   - Tasks must be completed in a timely fashion
@@ -408,22 +410,18 @@ You are not expected to be experts by the end of this, but familiarty with each 
 
 - <span style="color:#219ebc;">**Dependent On** </span> 
   - Used to set a difference in deadlines between two or more tasks. 
-  - Useful for tasks that cannot be started until a previous task is completed
   - Used for all paper templates to set deadlines based on submission date
 :::
 ::: {.column width="48%"}
 - <span style="color:#b392ac;">**Due Date** </span>
   - Used to organize tasks by date in My Work
 
-- <span style="color:#f4f4f9;">**Link** </span>
+- <span style="color:#262626;">**Link** </span>
   - Any useful links, used in the “Wiki Link” group to connect the project’s notebook
 
 - <span style="color:#b8dbd9;">**Project Leader** </span>
   - Should be set as a default value for the board
   - Can be filtered for in My Work to see all tasks that they are supervising
-
-- <span style="color:#ffcf01;">**Project Meeting** </span> 
-  - Should be set as a default value for the board
 
 - <span style="color:#0466c8;">**Notifications** </span> 
   - Receive a notification 1 week, 3 days, or 1 day before a task is due
