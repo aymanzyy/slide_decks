@@ -361,17 +361,15 @@ Professor Randles just laid out updated SOPs, good to read in depth
 
 ## Outlook, Meetings Overview 
 
-::: {.fragment .fade-in-then-out-out}
 
 ![](https://i.gyazo.com/cadbca20725120ffc1d68cb6b99d30b2.png){width=75%}
 
-:::
+
 ## Outlook Time-Off Overview 
-::: {.fragment .fade-in-then-out-out}
 
-![](https://i.gyazo.com/cbc94a3f77ad59c3389870a39233c23a.png){width=65%}
+![](assets/out_of_office_calendar.png){width=65%}
 
-:::
+
 # Monday.com {#monday .centeredslide}
 :::: {.columns}
 
@@ -390,7 +388,7 @@ Professor Randles just laid out updated SOPs, good to read in depth
 :::
 
 ::: {.column width="49%"}
-![](https://thedigitalprojectmanager.com/wp-content/uploads/2021/04/In-depth-review-–-Monday.com-featured-image.png){width=75%}
+![](assets/monday_logo.png){width=75%}
 
 :::
 
