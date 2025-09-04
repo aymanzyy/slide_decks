@@ -56,13 +56,13 @@ format:
 2. [Lab Policies](#labpolicies)
     - [Meetings](#meetings)
     - [Documents](#docs)
-2. [Documentation](#documentation)
+3. [Documentation](#documentation)
     - [Wiki](#wiki)
     - [Box](#box)
     - [Outlook](#outlook)
-3. [Monday.com](#monday)
-4. [Overleaf](#overleaf)
-5. [Whiteside's](#whitesides)
+4. [Monday.com](#monday)
+5. [Overleaf](#overleaf)
+6. [Whiteside's](#whitesides)
 
 
 # Background {#background .centeredslide}
@@ -167,7 +167,7 @@ You are not expected to be experts by the end of this, but familiarty with each 
 :::
 ::::
 
-# Documents {#meetings .centeredslide}
+# Documents {#docs .centeredslide}
 
 :::: {.columns}
 
